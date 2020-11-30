@@ -1,0 +1,39 @@
+/*Custom inputs*/
+.form-group .custom-input {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 50px;
+    color: #474747;
+    line-height: 28px;
+    padding: 10px 20px;
+    font-size: 14px;
+    background: none;
+    transition: all 500ms ease;
+    border: 1px solid #ececec;
+}
+
+
+/*Custom margins*/
+.ml-3 {
+    margin-left: 1.5rem;
+}
+
+.ml-5 {
+    margin-left: 3rem;
+}
+
+.mar-bottom-0 {
+    margin-bottom: 0px !important;
+}
+
+
+/*Custom paddings*/
+.padd-top-45 {
+    padding-top: 45px;
+}
+
+/* Custom premium card icon background*/
+.services-block-eleven .img-holder .icon-box {
+    background: #34c3ed !important;
+}
