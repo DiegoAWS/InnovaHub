@@ -27,7 +27,7 @@
          data-paddingbottom="[0,0,0,0]"
          data-paddingleft="[0,0,0,0]"
 
-         style="z-index: 5;"><img src="images/main-slider/pattern.png" alt=""
+         style="z-index: 5;"><img src="{{mix('images/main-slider/pattern.png')}}" alt=""
                                   data-ww="['845px','845px','800px','500px']"
                                   data-hh="['670','670','670','670']" width="1200" height="670"
                                   data-no-retina></div>
@@ -53,10 +53,10 @@
 
          style="z-index: 6;border-width:0px;">
         <div class="rs-looped rs-wave" data-speed="6" data-angle="0" data-radius="2px"
-             data-origin="50% 50%"><img class="right-side" src="images/main-slider/border.png"
+             data-origin="50% 50%"><img class="right-side" src="{{mix('images/main-slider/border.png')}}"
                                         alt="" data-ww="['309px','309px','300px','300px']"
                                         data-hh="['382px','380px','300px','300px']" width="309"
-                                        height="382" data-lazyload="images/main-slider/border.png"
+                                        height="382" data-lazyload="{{mix('images/main-slider/border.png')}}"
                                         data-no-retina></div>
     </div>
 

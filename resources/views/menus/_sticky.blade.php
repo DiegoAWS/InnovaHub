@@ -2,7 +2,7 @@
     <div class="auto-container clearfix">
         <!--Logo-->
         <div class="logo pull-left">
-            <a href="index.html" class="img-responsive" title="Finace Hub"><img src="images/logo-small.png"
+            <a href="index.html" class="img-responsive" title="Finace Hub"><img src="{{mix('images/logo-small.png')}}"
                                                                                 alt="Finace Hub"
                                                                                 title="Finace Hub"></a>
         </div>

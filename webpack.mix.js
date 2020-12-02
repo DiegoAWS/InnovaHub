@@ -17,10 +17,31 @@ mix
         'resources/ui-template/fonts',
     ], 'public/fonts')
 
+    .copy('resources/ui-template/fonts/revicons90c6.woff', 'public/fonts/revicons/revicons.woff')
+    .copy('resources/ui-template/fonts/revicons90c6.ttf', 'public/fonts/revicons/revicons.ttf')
+
     //  Images
-    .copy([
-        'resources/ui-template/images/favicon.png',
-    ], 'public/images/')
+    .copy(['resources/ui-template/images/favicon.png',
+        'resources/ui-template/images/logo.png',
+        'resources/ui-template/images/logo-2.png',
+        'resources/ui-template/images/logo-small.png',
+        'resources/ui-template/images/footer-logo.png',
+        'resources/ui-template/images/favicon.png',], 'public/images/')
+
+    .copy(['resources/ui-template/images/main-slider/img-2-a.jpg',
+        'resources/ui-template/images/main-slider/img-2-b.jpg',
+        'resources/ui-template/images/main-slider/img-2-c.jpg',
+        'resources/ui-template/images/main-slider/border.png',
+        'resources/ui-template/images/main-slider/pattern.png',], 'public/images/main-slider/')
+
+    .copy(['resources/ui-template/images/gallery/proj-1.jpg',
+        'resources/ui-template/images/gallery/proj-2.jpg',
+        'resources/ui-template/images/gallery/proj-3.jpg',
+        'resources/ui-template/images/gallery/proj-4.jpg',
+        'resources/ui-template/images/gallery/proj-5.jpg',
+        'resources/ui-template/images/gallery/proj-6.jpg',
+        'resources/ui-template/images/gallery/proj-7.jpg',
+        'resources/ui-template/images/gallery/proj-8.jpg',], 'public/images/gallery/')
 
 
     // VENDOR CSS
@@ -63,7 +84,6 @@ mix
         'resources/ui-template/js/main-slider-script.js',
         'resources/ui-template/js/script.js',
     ], 'public/js/vendor.js').version()
-
 
 
     .js('resources/js/app.js', 'public/js')

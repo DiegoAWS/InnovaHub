@@ -5,7 +5,7 @@
             <div class="logo-outer">
                 <div class="logo">
                     <a href="{{ route('home') }}">
-                        <img src="images/logo.png" alt="Logo" title="Company logo">
+                        <img src="{{mix('images/logo.png')}}" alt="Logo" title="Company logo">
                     </a>
                 </div>
             </div>
