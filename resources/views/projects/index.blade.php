@@ -42,6 +42,7 @@
             <div class="filter-list row clearfix">
 
                 <!--Project Block One-->
+
                 <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 project-block-one mix all finance consulting finance">
                     <div class="services-block-eleven mar-bottom-0">
                         <div class="inner-box img-holder">
@@ -52,7 +53,7 @@
                                     <span class="icon-luxury"></span>
                                 </div>
 
-                                <a href="project-details.html" class="overlay-box">
+                                <a href="{{ route('projects.show') }}" class="overlay-box">
                                     <span class="icon fa fa-link"></span>
                                 </a>
                             </figure>
@@ -75,12 +76,12 @@
                                     <span class="icon-luxury"></span>
                                 </div>
 
-                                <a href="project-details.html" class="overlay-box">
+                                <a href="{{ route('projects.show') }}" class="overlay-box">
                                     <span class="icon fa fa-link"></span>
                                 </a>
                             </figure>
                             <div class="lower-content grey-bg">
-                                <h3><a href="project-details.html">Financial Markert</a></h3>
+                                <h3><a href="{{ route('projects.show') }}">Financial Markert</a></h3>
                                 <div class="text">Finance</div>
                             </div>
                         </div>
@@ -92,12 +93,12 @@
                     <div class="inner-box">
                         <figure class="image-box">
                             <img src="images/gallery/proj-3.jpg" alt="">
-                            <a href="project-details.html" class="overlay-box">
+                            <a href="{{ route('projects.show') }}" class="overlay-box">
                                 <span class="icon fa fa-link"></span>
                             </a>
                         </figure>
                         <div class="lower-content grey-bg">
-                            <h3><a href="project-details.html">Investment Plan</a></h3>
+                            <h3><a href="{{ route('projects.show') }}">Investment Plan</a></h3>
                             <div class="text">Investment</div>
                         </div>
                     </div>
@@ -108,12 +109,12 @@
                     <div class="inner-box">
                         <figure class="image-box">
                             <img src="images/gallery/proj-4.jpg" alt="">
-                            <a href="project-details.html" class="overlay-box">
+                            <a href="{{ route('projects.show') }}" class="overlay-box">
                                 <span class="icon fa fa-link"></span>
                             </a>
                         </figure>
                         <div class="lower-content grey-bg">
-                            <h3><a href="project-details.html">Foreign Exchange</a></h3>
+                            <h3><a href="{{ route('projects.show') }}">Foreign Exchange</a></h3>
                             <div class="text">Business</div>
                         </div>
                     </div>
@@ -124,12 +125,12 @@
                     <div class="inner-box">
                         <figure class="image-box">
                             <img src="images/gallery/proj-5.jpg" alt="">
-                            <a href="project-details.html" class="overlay-box">
+                            <a href="{{ route('projects.show') }}" class="overlay-box">
                                 <span class="icon fa fa-link"></span>
                             </a>
                         </figure>
                         <div class="lower-content grey-bg">
-                            <h3><a href="project-details.html">Investment Plan</a></h3>
+                            <h3><a href="{{ route('projects.show') }}">Investment Plan</a></h3>
                             <div class="text">Investment</div>
                         </div>
                     </div>
@@ -140,12 +141,12 @@
                     <div class="inner-box">
                         <figure class="image-box">
                             <img src="images/gallery/proj-6.jpg" alt="">
-                            <a href="project-details.html" class="overlay-box">
+                            <a href="{{ route('projects.show') }}" class="overlay-box">
                                 <span class="icon fa fa-link"></span>
                             </a>
                         </figure>
                         <div class="lower-content grey-bg">
-                            <h3><a href="project-details.html">Foreign Exchange</a></h3>
+                            <h3><a href="{{ route('projects.show') }}">Foreign Exchange</a></h3>
                             <div class="text">Business</div>
                         </div>
                     </div>
@@ -156,12 +157,12 @@
                     <div class="inner-box">
                         <figure class="image-box">
                             <img src="images/gallery/proj-7.jpg" alt="">
-                            <a href="project-details.html" class="overlay-box">
+                            <a href="{{ route('projects.show') }}" class="overlay-box">
                                 <span class="icon fa fa-link"></span>
                             </a>
                         </figure>
                         <div class="lower-content grey-bg">
-                            <h3><a href="project-details.html">Income Tax Planning</a></h3>
+                            <h3><a href="{{ route('projects.show') }}">Income Tax Planning</a></h3>
                             <div class="text">Income Tax</div>
                         </div>
                     </div>
@@ -172,13 +173,13 @@
                     <div class="inner-box">
                         <figure class="image-box">
                             <img src="images/gallery/proj-8.jpg" alt="">
-                            <a href="project-details.html" class="overlay-box">
+                            <a href="{{ route('projects.show') }}" class="overlay-box">
                                 <span class="icon fa fa-link"></span>
                             </a>
                         </figure>
                         <div class="lower-content grey-bg">
 
-                            <h3><a href="project-details.html">Financial Markert</a></h3>
+                            <h3><a href="{{ route('projects.show') }}">Financial Markert</a></h3>
                             <div class="text">Finance</div>
                         </div>
                     </div>

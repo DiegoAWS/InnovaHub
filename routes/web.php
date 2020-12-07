@@ -33,4 +33,7 @@ Auth::routes();
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/profile', [ProfileController::class, 'index'])->name('profile');
 
+// Projects routes ...
 Route::get('/projects', [ProjectsController::class, 'index'])->name('projects');
+Route::get('/projects/show', [ProjectsController::class, 'show'])->name('projects.show');
+

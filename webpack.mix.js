@@ -41,11 +41,19 @@ mix
         'resources/ui-template/images/gallery/proj-5.jpg',
         'resources/ui-template/images/gallery/proj-6.jpg',
         'resources/ui-template/images/gallery/proj-7.jpg',
-        'resources/ui-template/images/gallery/proj-8.jpg',], 'public/images/gallery/')
+        'resources/ui-template/images/gallery/proj-8.jpg',
+        'resources/ui-template/images/gallery/gallery-30.jpg',
+        'resources/ui-template/images/gallery/proj-detail-01.jpg',
+        'resources/ui-template/images/gallery/proj-detail-02.png'], 'public/images/gallery/')
+
+    .copy(['resources/ui-template/images/background/banner-12.jpg',
+        'resources/ui-template/images/background/laptop.jpg'], 'public/images/background/')
+
 
 
     // VENDOR CSS
     .combine(['resources/ui-template/css/bootstrap.css',
+        'resources/ui-template/css/font-awesome.css',
         'resources/ui-template/plugins/revolution/css/settings.css',
         'resources/ui-template/plugins/revolution/css/layers.css',
         'resources/ui-template/plugins/revolution/css/navigation.css',
@@ -60,7 +68,7 @@ mix
     // VENDOR JS
     .combine(['resources/ui-template/js/jquery.js',
         'resources/ui-template/js/bootstrap.min.js',
-        // Start Revolution Slider
+        // Start Revolution Slider  // TODO:: separate revolution slide
         'resources/ui-template/plugins/revolution/js/jquery.themepunch.revolution.min.js',
         'resources/ui-template/plugins/revolution/js/jquery.themepunch.tools.min.js',
         'resources/ui-template/plugins/revolution/js/extensions/revolution.extension.actions.min.js',
