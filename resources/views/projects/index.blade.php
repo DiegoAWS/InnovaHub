@@ -2,25 +2,26 @@
 
 @section('content')
     <!--Gallery Section Two-->
-    <section class="gallery-section padd-top-45" >
+    <section class="gallery-section padd-top-45">
         <div class="auto-container">
             <div class="filters-column text-center">
                 <!--Filter-->
                 <div class="filters gallery-filters">
                     <ul class="filter-tabs filter-btns clearfix">
-                        <li class="active filter" data-role="button" data-filter="all">{{ __('All') }}</li>
+                        <li class="active filter all" data-role="button" data-filter=".all">{{ __('All') }}</li>
                         <li class="filter" data-role="button" data-filter=".consulting">{{ __('Collaboration') }}</li>
+                        <li class="filter" data-role="button" data-filter=".innovation">{{ __('Innovation') }}</li>
                         <li class="filter" data-role="button" data-filter=".financial">{{ __('Business') }}</li>
-                        <li class="filter" data-role="button" data-filter=".marketing">{{ __('Transfer') }}</li>
-                        <li class="filter" data-role="button" data-filter=".growth">{{ __('Service') }}</li>
+                        <li class="filter" data-role="button" data-filter=".transfer">{{ __('Transfer') }}</li>
+                        <li class="filter" data-role="button" data-filter=".service">{{ __('Service') }}</li>
                     </ul>
                 </div>
 
             </div>
-
-            <div class="filter-list row clearfix">
+            {{--            onclick="$('div.consulting').show(); $('div.text-filter:not(div.consulting)').hide()--}}
+            <div class="row gallery-filters  clearfix">
                 <!--Project Block One-->
-                <div class="col-xs-12   project-block-one mix all financial">
+                <div class="col-xs-12  filter-text all ">
                     <p class="ml-5">
                         <em>
                             <strong>
@@ -28,9 +29,83 @@
                                 distintas
                                 <a href="#"> temáticas </a> como oportunidad para asociarte a otros usuarios <br>
                                 en algunas de las <a href="#"> modalidades </a> de innovación. <br>
-                                En todos los casos, se pone a disposición de los interesados, los <a href=""> servicios </a>
+                                En todos los casos, se pone a disposición de los interesados, los <a href="">
+                                    servicios </a>
                                 de asesoría de A+ Consultores
                                 para el análisis y gestión del proyecto.
+                            </strong>
+                        </em>
+                    </p>
+                </div>
+                <!--Project Block One-->
+
+                <!--Project Block One-->
+                <div class="col-xs-12  filter-text consulting hide">
+                    <p class="ml-5">
+                        <em>
+                            <strong>
+                                En este tipo de proyectos se forjan <code> alianzas</code> entre 2 o más <a href="#">
+                                    Usuarios </a> que comparten y
+                                complementan habilidades y competencias para solucionar un determinado problema, con
+                                iniciativas vinculadas a la estrategia de negocio y pretendiendo la sostenibilidad
+                                <code> financiara </code>.
+                            </strong>
+                        </em>
+                    </p>
+                </div>
+                <!--Project Block One-->
+
+                <!--Project Block One-->
+                <div class="col-xs-12  filter-text financial hide">
+                    <p class="ml-5">
+                        <em>
+                            <strong>
+                                En este tipo de proyecto, se busca que uno o varios usuarios <code> financien </code> la
+                                ejecución de
+                                un proyecto.
+                            </strong>
+                        </em>
+                    </p>
+                </div>
+                <!--Project Block One-->
+
+                <!--Project Block One-->
+                <div class="col-xs-12  filter-text innovation hide">
+                    <p class="ml-5">
+                        <em>
+                            <strong>
+                                En este tipo de proyecto existe el aporte de resultados de la investigación o de
+                                cualquier otro tipo de <code> conocimiento científico </code> y se busca que otros
+                                usuarios garanticen
+                                su <code> concresión </code> como nuevo producto, servicio o proceso, o la mejora de
+                                existentes.
+                            </strong>
+                        </em>
+                    </p>
+                </div>
+                <!--Project Block One-->
+
+                <!--Project Block One-->
+                <div class="col-xs-12  filter-text transfer hide">
+                    <p class="ml-5">
+                        <em>
+                            <strong>
+                                En este tipo de proyecto un usuario oferta una <a href="#"> tecnología </a>, un negocio,
+                                un <code> modelo de negocio </code> para ser asimilado por uno o varios usuarios en el
+                                desarrollo de un nuevo proyecto.
+                            </strong>
+                        </em>
+                    </p>
+                </div>
+                <!--Project Block One-->
+
+                <!--Project Block One-->
+                <div class="col-xs-12  filter-text service hide">
+                    <p class="ml-5">
+                        <em>
+                            <strong>
+                                En este tipo de proyecto un usuario solicita que otro usuario le de un servicio para
+                                lograr <code> objetivos concretos </code>, en un lapso de tiempo y con <a href="#"> financiamiento </a> acordado.
                             </strong>
                         </em>
                     </p>
@@ -43,7 +118,8 @@
 
                 <!--Project Block One-->
 
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 project-block-one mix all finance consulting finance">
+                <div
+                    class="col-lg-3 col-md-4 col-sm-6 col-xs-12 project-block-one mix all consulting financial">
                     <div class="services-block-eleven mar-bottom-0">
                         <div class="inner-box img-holder">
                             <figure class="image-box">
@@ -66,7 +142,7 @@
                 </div>
 
                 <!--Project Block One-->
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 project-block-one mix all finance consulting finance">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 project-block-one mix all transfer consulting">
                     <div class="services-block-eleven mar-bottom-0">
                         <div class="inner-box img-holder">
                             <figure class="image-box">
@@ -89,7 +165,7 @@
                 </div>
 
                 <!--Project Block One-->
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 project-block-one mix all financial">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 project-block-one mix all financial innovation">
                     <div class="inner-box">
                         <figure class="image-box">
                             <img src="images/gallery/proj-3.jpg" alt="">
@@ -105,7 +181,8 @@
                 </div>
 
                 <!--Project Block One-->
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 project-block-one mix all finance marketing consulting finance">
+                <div
+                    class="col-lg-3 col-md-4 col-sm-6 col-xs-12 project-block-one mix all  innovation consulting">
                     <div class="inner-box">
                         <figure class="image-box">
                             <img src="images/gallery/proj-4.jpg" alt="">
@@ -121,7 +198,7 @@
                 </div>
 
                 <!--Project Block One-->
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 project-block-one mix all finance marketing">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 project-block-one mix all  service">
                     <div class="inner-box">
                         <figure class="image-box">
                             <img src="images/gallery/proj-5.jpg" alt="">
@@ -137,7 +214,7 @@
                 </div>
 
                 <!--Project Block One-->
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 project-block-one mix all consulting growth">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 project-block-one mix all consulting service transfer">
                     <div class="inner-box">
                         <figure class="image-box">
                             <img src="images/gallery/proj-6.jpg" alt="">
@@ -190,3 +267,20 @@
     </section>
     <!--Gallery Section End -->
 @endsection
+
+@push('scripts')
+    <script>
+        $(function () {
+            // Set ALl tab active by default ...
+            $('li.all').addClass('active')
+
+            $('li.filter').on('click', function (e) {
+                let eClass = $(this).data('filter')
+                $('div.filter-text').addClass('hide')
+                $('div.filter-text' + eClass).removeClass('hide')
+            })
+        })
+
+    </script>
+@endpush
+
