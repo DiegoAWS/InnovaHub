@@ -70,7 +70,7 @@
                                 </li>
 
                                 <li>
-                                    <a href="{{route('login')}}">{{__('Login')}}</a>
+                                    <a href="{{ config('app.business_url')  }}">{{__('Login')}}</a>
                                 </li>
                             </ul>
 
