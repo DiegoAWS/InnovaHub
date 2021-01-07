@@ -37,3 +37,24 @@
 .services-block-eleven .img-holder .icon-box {
     background: #34c3ed !important;
 }
+
+/* Custom Flex Property on Main NavBar */
+@media only screen and (min-width: 991px) and (max-width: 1025px) {
+    .main-menu .navbar-collapse>.navigation {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+
+.proyect-presentation-text {
+    line-height: 1.8em;
+    font-size: 16px;
+    color: #848484;
+    font-weight: 300;
+    text-align: justify;
+}
+.mx-5 {
+    margin-left: 5rem;
+    margin-right: 5rem;
+}

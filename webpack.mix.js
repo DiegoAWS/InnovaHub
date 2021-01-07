@@ -61,8 +61,7 @@ mix
         'resources/ui-template/css/responsive.css',
     ], 'public/css/vendor.css').version()
 
-    // CUSTOM CSS
-    .copy(['resources/css/custom.css'], 'public/css/').version()
+  
 
 
     // VENDOR JS
@@ -96,4 +95,5 @@ mix
 
     .js('resources/js/app.js', 'public/js')
     .sass('resources/sass/app.scss', 'public/css')
+    .sass('resources/css/custom.scss', 'public/css/')
     .sourceMaps();
