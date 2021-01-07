@@ -4,6 +4,8 @@
         <div class="logo pull-left">
             <a href="index.html" class="img-responsive" title="Finace Hub"><img src="{{mix('images/logo-small.png')}}"
                                                                                 alt="Finace Hub"
+                                                                                height="30px"
+                                                                                width="220px"
                                                                                 title="Finace Hub"></a>
         </div>
 

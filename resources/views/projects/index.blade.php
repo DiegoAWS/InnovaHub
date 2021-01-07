@@ -22,92 +22,90 @@
             <div class="row gallery-filters  clearfix">
                 <!--Project Block One-->
                 <div class="col-xs-12  filter-text all ">
-                    <p class="ml-5">
-                        <em>
-                            <strong>
+                    <p class="mx-5 proyect-presentation-text">
+                        
                                 Ponemos a tu disposición un amplio y variado portafolio de Proyectos de Innovación, en
                                 distintas
-                                <a href="#"> temáticas </a> como oportunidad para asociarte a otros usuarios <br>
+                                <a href="#"> temáticas </a> como oportunidad para asociarte a otros usuarios 
                                 en algunas de las <a href="#"> modalidades </a> de innovación. <br>
                                 En todos los casos, se pone a disposición de los interesados, los <a href="">
                                     servicios </a>
                                 de asesoría de A+ Consultores
                                 para el análisis y gestión del proyecto.
-                            </strong>
-                        </em>
+                           
+                     
                     </p>
                 </div>
                 <!--Project Block One-->
 
                 <!--Project Block One-->
                 <div class="col-xs-12  filter-text consulting hide">
-                    <p class="ml-5">
-                        <em>
-                            <strong>
-                                En este tipo de proyectos se forjan <code> alianzas</code> entre 2 o más <a href="#">
-                                    Usuarios </a> que comparten y
-                                complementan habilidades y competencias para solucionar un determinado problema, con
+                    <p class="mx-5 proyect-presentation-text">
+                        
+                            
+                                En este tipo de proyectos se forjan alianzas entre 2 o más <a href="#">
+                                    Usuarios </a> que comparten y complementan habilidades y competencias para solucionar un determinado problema, con
                                 iniciativas vinculadas a la estrategia de negocio y pretendiendo la sostenibilidad
-                                <code> financiara </code>.
-                            </strong>
-                        </em>
+                                financiara.
+                            
+                        
                     </p>
                 </div>
                 <!--Project Block One-->
 
                 <!--Project Block One-->
                 <div class="col-xs-12  filter-text financial hide">
-                    <p class="ml-5">
-                        <em>
-                            <strong>
-                                En este tipo de proyecto, se busca que uno o varios usuarios <code> financien </code> la
+                    <p class="mx-5 proyect-presentation-text">
+                        
+                            
+                                En este tipo de proyecto, se busca que uno o varios usuarios financien la
                                 ejecución de
                                 un proyecto.
-                            </strong>
-                        </em>
+                            
+                        
                     </p>
                 </div>
                 <!--Project Block One-->
 
                 <!--Project Block One-->
                 <div class="col-xs-12  filter-text innovation hide">
-                    <p class="ml-5">
-                        <em>
-                            <strong>
+                    <p class="mx-5 proyect-presentation-text">
+                        
+                            
                                 En este tipo de proyecto existe el aporte de resultados de la investigación o de
-                                cualquier otro tipo de <code> conocimiento científico </code> y se busca que otros
+                                cualquier otro tipo de conocimiento científico y se busca que otros
                                 usuarios garanticen
-                                su <code> concresión </code> como nuevo producto, servicio o proceso, o la mejora de
+                                su concresión como nuevo producto, servicio o proceso, o la mejora de
                                 existentes.
-                            </strong>
-                        </em>
+                            
+                        
                     </p>
                 </div>
                 <!--Project Block One-->
 
                 <!--Project Block One-->
                 <div class="col-xs-12  filter-text transfer hide">
-                    <p class="ml-5">
-                        <em>
-                            <strong>
+                    <p class="mx-5 proyect-presentation-text">
+                        
+                            
                                 En este tipo de proyecto un usuario oferta una <a href="#"> tecnología </a>, un negocio,
-                                un <code> modelo de negocio </code> para ser asimilado por uno o varios usuarios en el
+                                un modelo de negocio para ser asimilado por uno o varios usuarios en el
                                 desarrollo de un nuevo proyecto.
-                            </strong>
-                        </em>
+                            
+                        
                     </p>
                 </div>
                 <!--Project Block One-->
 
                 <!--Project Block One-->
                 <div class="col-xs-12  filter-text service hide">
-                    <p class="ml-5">
-                        <em>
-                            <strong>
+                    <p class="mx-5 proyect-presentation-text">
+                        
+                            
                                 En este tipo de proyecto un usuario solicita que otro usuario le de un servicio para
-                                lograr <code> objetivos concretos </code>, en un lapso de tiempo y con <a href="#"> financiamiento </a> acordado.
-                            </strong>
-                        </em>
+                                lograr objetivos concretos, en un lapso de tiempo y con <a href="#"> financiamiento </a> acordado.
+                            
+                        
                     </p>
                 </div>
                 <!--Project Block One-->

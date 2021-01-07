@@ -1,6 +1,7 @@
 {
-    "/js/app.js": "/js/app.js?id=20257916ab85d9c8ff33",
-    "/css/app.css": "/css/app.css?id=f4d8b4dcea3280933ba3",
+    "/js/app.js": "/js/app.js?id=ba4735ea7532e00192c3",
+    "/css/app.css": "/css/app.css?id=9846fb41d10da519f5cc",
+    "/css/custom.css": "/css/custom.css?id=317e4706dcbb2b8db582",
     "/fonts/revicons/revicons.woff": "/fonts/revicons/revicons.woff?id=646bf387473b10fe16fa",
     "/fonts/revicons/revicons.ttf": "/fonts/revicons/revicons.ttf?id=c9bfe444929c4f0bc22f",
     "/images/favicon.png": "/images/favicon.png?id=62621f2ae41d0e2b82a6",
@@ -26,7 +27,6 @@
     "/images/gallery/proj-detail-02.png": "/images/gallery/proj-detail-02.png?id=9b1378797f8d36c705ac",
     "/images/background/banner-12.jpg": "/images/background/banner-12.jpg?id=21dd709faafe0303f929",
     "/images/background/laptop.jpg": "/images/background/laptop.jpg?id=33dd3001d87cd41f3c8e",
-    "/css/vendor.css": "/css/vendor.css?id=911a756bb0f770ae3012",
-    "/css/custom.css": "/css/custom.css?id=8e8697e4431b4a87d969",
+    "/css/vendor.css": "/css/vendor.css?id=2a85068ced39ed9b5e5f",
     "/js/vendor.js": "/js/vendor.js?id=d0af782ef5e800c14eee"
 }
