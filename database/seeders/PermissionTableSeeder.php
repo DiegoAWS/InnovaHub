@@ -16,7 +16,7 @@ class PermissionTableSeeder extends Seeder
     public function run()
     {
         // Reset cached roles and permissions
-        app()[PermissionRegistrar::class]->forgetCachedPermissions();
+        app()->make(\Spatie\Permission\PermissionRegistrar::class)->forgetCachedPermissions();
 
         // Super admin
         $roleSuperAdmin = Role::create(['name' => 'super admin']);
@@ -34,8 +34,8 @@ class PermissionTableSeeder extends Seeder
         $roleStartup->givePermissionTo($permissionCreateOpp);
 
         // Company
-        $roleAdmin = Role::create(['name' => 'company']);
-        $roleAdmin->givePermissionTo($permissionCreateOpp);
+        $roleCompany = Role::create(['name' => 'company']);
+        $roleCompany->givePermissionTo($permissionCreateOpp);
 
 
     }
