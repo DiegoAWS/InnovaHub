@@ -20,7 +20,7 @@ mix
     .copy('resources/ui-template/fonts/revicons90c6.woff', 'public/fonts/revicons/revicons.woff')
     .copy('resources/ui-template/fonts/revicons90c6.ttf', 'public/fonts/revicons/revicons.ttf')
 
-    //  Images
+    // //  Images
     .copy(['resources/ui-template/images/favicon.png',
         'resources/ui-template/images/logo.png',
         'resources/ui-template/images/logo-2.png',

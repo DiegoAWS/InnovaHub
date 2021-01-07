@@ -27,11 +27,11 @@
 
                         <div class="navbar-collapse collapse clearfix">
                             <ul class="navigation clearfix">
-                                <li>
+                                <li  style="margin-right: 15px;">
                                     <a href="{{ route('home') }}">{{__('Home')}}</a>
                                 </li>
 
-                                <li class="dropdown">
+                                <li class="dropdown" style="margin-right: 15px;">
                                     <a href="#">{{__('Services')}}</a>
                                     <ul>
                                         <li><a href="services.html">All Services</a></li>
@@ -44,7 +44,7 @@
                                     </ul>
                                 </li>
 
-                                <li class="dropdown"><a href="#">{{__('Company')}}</a>
+                                <li class="dropdown" style="margin-right: 15px;"><a href="#">{{__('Company')}}</a>
                                     <ul>
                                         <li><a href="blog-grid.html">News Default</a></li>
                                         <li><a href="blog-sidebar.html">News With Sidebar</a></li>
@@ -53,25 +53,26 @@
                                     </ul>
                                 </li>
 
-                                <li>
+                                <li style="margin-right: 15px;">
                                     <a href="{{ route('projects') }}">{{__('Projects')}}</a>
-                                </li>
+                                </li style="margin-right: 0px;">
 
-                                <li>
+                                <li style="margin-right: 15px;">
                                     <a href="{{ route('projects') }}">{{__('Resources')}}</a>
-                                </li>
+                                </li style="margin-right: 0px;">
 
-                                <li>
+                                <li style="margin-right: 15px;">
                                     <a href="{{ route('projects') }}">{{__('Blog')}}</a>
                                 </li>
-
-                                <li>
+{{--
+                                <li style="margin-right: 15px;">
                                     <a href="contact.html">{{ __('Contact Us') }}</a>
+                                </li>--}}
+                                @guest
+                                <li style="margin-right: 15px;">
+                                    <a href="{{ url("/login") }}">{{__('Login')}}</a>
                                 </li>
-
-                                <li>
-                                    <a href="{{ config('app.business_url')  }}">{{__('Login')}}</a>
-                                </li>
+                                @endguest
                             </ul>
 
                         </div>
