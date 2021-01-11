@@ -70,7 +70,7 @@
                                 </li>--}}
                                 @guest
                                 <li style="margin-right: 15px;">
-                                    <a href="{{ url("/login") }}">{{__('Login')}}</a>
+                                    <a href="{{ url("http://enlaces-business.softok2.mx/login") }}">{{__('Login')}}</a>
                                 </li>
                                 @endguest
                             </ul>

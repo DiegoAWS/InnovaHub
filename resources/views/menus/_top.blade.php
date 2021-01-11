@@ -6,10 +6,11 @@
                 <ul class="dropdown-option clearfix">
                     <li class="language dropdown"><a class="btn btn-default dropdown-toggle" id="dropdownMenu1"
                                                      data-toggle="dropdown" aria-haspopup="true"
-                                                     aria-expanded="true" href="#">{{__('Spanish')}} &nbsp;<span
+                                                     aria-expanded="true" href="#">{{__('Language')}} &nbsp;<span
                                 class="icon fa fa-angle-down"></span></a>
                         <ul class="dropdown-menu style-one" aria-labelledby="dropdownMenu1">
                             <li><a href="{{route('locale', 'en')}}">{{__('English')}}</a></li>
+                            <li><a href="{{route('locale', 'es')}}">{{__('Spanish')}}</a></li>
                         </ul>
                     </li>
                 </ul>

@@ -1493,7 +1493,7 @@
 
 <!--Scroll to top-->
 <div class="scroll-to-top scroll-to-target" data-target="html"><span class="icon fa fa-angle-up"></span></div>
-
+{{--
 <script src="js/jquery.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <!--Revolution Slider-->
@@ -1519,7 +1519,8 @@
 <script src="js/mixitup.js"></script>
 <script src="js/main-slider-script.js"></script>
 <script src="js/script.js"></script>
-
+--}}
+@include('layouts.stacks')
 </body>
 </html>
 

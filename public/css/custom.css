@@ -1,0 +1,107 @@
+/*Custom inputs*/
+
+.form-group .custom-input {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 50px;
+  color: #474747;
+  line-height: 28px;
+  padding: 10px 20px;
+  font-size: 14px;
+  background: none;
+  transition: all 500ms ease;
+  border: 1px solid #ececec;
+}
+
+/*Custom margins*/
+
+.ml-3 {
+  margin-left: 1.5rem;
+}
+
+.ml-5 {
+  margin-left: 3rem;
+}
+
+.mar-bottom-0 {
+  margin-bottom: 0px !important;
+}
+
+/*Custom paddings*/
+
+.padd-top-45 {
+  padding-top: 45px;
+}
+
+/* Custom premium card icon background*/
+
+.services-block-eleven .img-holder .icon-box {
+  background: #34c3ed !important;
+}
+
+/* Custom Flex Property on Main NavBar */
+
+@media only screen and (min-width: 991px) and (max-width: 1025px) {
+  .main-menu .navbar-collapse > .navigation {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.proyect-presentation-text {
+  line-height: 1.8em;
+  font-size: 16px;
+  color: #848484;
+  font-weight: 300;
+  text-align: justify;
+}
+
+.mx-5 {
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
+.main-header.header-style-two .header-top .top-right ul > li .icon {
+  background: transparent !important;
+}
+
+.main-header.header-style-two .header-top {
+  background: transparent !important;
+}
+
+.main-header.header-style-two {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.2) !important;
+}
+
+.main-header .header-upper {
+  background-color: white;
+}
+
+.main-header .header-top ul.top-links > li > .icon {
+  color: white !important;
+}
+
+.main-header .dropdown-option li.language > a {
+  color: white !important;
+}
+
+.main-header.header-style-two .header-top .top-right ul > li {
+  color: white !important;
+}
+
+section.about-section {
+  margin-top: 20px;
+}
+
+.news-block .inner-box .image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 200px;
+}
+
+.news-section {
+  padding-top: 30px;
+}
+

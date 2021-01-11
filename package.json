@@ -1,7 +1,7 @@
 {
     "private": true,
     "scripts": {
-        "start":"npm run watch",
+        "start": "npm run watch",
         "dev": "npm run development",
         "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --config=node_modules/laravel-mix/setup/webpack.config.js",
         "watch": "npm run development -- --watch",
@@ -13,6 +13,8 @@
     "devDependencies": {
         "axios": "^0.21.1",
         "bootstrap": "^4.0.0",
+        "browser-sync": "^2.26.13",
+        "browser-sync-webpack-plugin": "^2.0.1",
         "cross-env": "^7.0",
         "jquery": "^3.2",
         "laravel-mix": "^5.0.1",

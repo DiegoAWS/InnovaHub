@@ -78,7 +78,7 @@
          data-textalign="['top','top','top','top']"
          data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'
          style="z-index: 7; white-space: nowrap;text-transform:left;">
-        <h2 class="dark-text"><span>Welcome to</span><br>FinanceHUB</h2>
+        <h2 class="dark-text"><span>{{$slide['text1']}}</span><br>{{$slide['text2']}}</h2>
     </div>
 
     <div class="tp-caption"
@@ -98,9 +98,7 @@
          data-textalign="['top','top','top','top']"
          data-frames='[{"from":"x:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'
          style="z-index: 7; white-space: nowrap;text-transform:left;">
-        <div class="text light">Our Consulting company offers a full range of consulting <br>services
-            in all the countries
-        </div>
+        <div class="text light">{{$slide['text3']}}</div>
     </div>
 
     <div class="tp-caption tp-resizeme"
