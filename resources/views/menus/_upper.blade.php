@@ -57,9 +57,9 @@
                                     <a href="{{ route('projects') }}">{{__('Projects')}}</a>
                                 </li style="margin-right: 0px;">
 
-                                <li style="margin-right: 15px;">
+                                {{-- <li style="margin-right: 15px;">
                                     <a href="{{ route('projects') }}">{{__('Resources')}}</a>
-                                </li style="margin-right: 0px;">
+                                </li style="margin-right: 0px;"> --}}
 
                                 <li style="margin-right: 15px;">
                                     <a href="{{ route('projects') }}">{{__('Blog')}}</a>
