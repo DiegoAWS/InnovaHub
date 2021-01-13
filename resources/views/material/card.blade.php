@@ -11,7 +11,7 @@
     alt="...">
     <div class="caption">
       <h3>Thumbnail label</h3>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque reprehenderit labore iure, accusamus autem voluptatibus. Eveniet dolorem aliquid repellat quae nihil, facere dignissimos adipisci repudiandae, harum aperiam ab velit officia deserunt. Asperiores id pariatur natus aperiam sunt magnam enim, cumque, voluptas delectus culpa iusto sint quae quod facilis nemo accusantium?</p>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque reprehenderit labore iure, accusamus autem voluptatibus. </p>
       <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default"
           role="button">Button</a></p>
     </div>
