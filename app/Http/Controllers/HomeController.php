@@ -24,6 +24,13 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        return view('home',["transparency"=>true]);
     }
+
+    public function directory()
+    {
+        return view('directory');
+    }
+
+    
 }

@@ -31,6 +31,9 @@ Route::get('/lang/{locale}', function ($locale) {
 Auth::routes();
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
+
+Route::get('/directory', [HomeController::class, 'directory'])->name('directory');
+
 Route::get('/profile', [ProfileController::class, 'index'])->name('profile');
 
 // Projects routes ...

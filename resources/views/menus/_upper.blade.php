@@ -1,4 +1,4 @@
-<div class="header-upper">
+<div class="header-upper  shadows">
     <div class="auto-container">
         <div class="clearfix">
 
@@ -57,9 +57,9 @@
                                     <a href="{{ route('projects') }}">{{__('Projects')}}</a>
                                 </li style="margin-right: 0px;">
 
-                                {{-- <li style="margin-right: 15px;">
-                                    <a href="{{ route('projects') }}">{{__('Resources')}}</a>
-                                </li style="margin-right: 0px;"> --}}
+                                <li style="margin-right: 15px;">
+                                    <a href="{{ route('directory') }}">{{__('Directory')}}</a>
+                                </li style="margin-right: 0px;">
 
                                 <li style="margin-right: 15px;">
                                     <a href="{{ route('projects') }}">{{__('Blog')}}</a>

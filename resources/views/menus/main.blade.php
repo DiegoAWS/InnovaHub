@@ -1,10 +1,16 @@
+
 <!-- Preloader -->
+
 <div class="preloader"></div>
 
 
-<header class="main-header header-style-two">
+@if(isset($transparency))
+<header class="main-header header-style-two transparency">
+@else
+<header class="main-header header-style-two notTransparency">
+@endif
 
-    <!--Header Top-->
+<!--Header Top-->
 @include('menus._top')
 <!--End Header Top-->
 

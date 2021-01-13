@@ -51,7 +51,7 @@
                             </ul>
                         </li>
                         <li><a href="{{ route('projects') }}">{{__('Projects')}}</a>
-                        <li><a href="{{ route('projects') }}">{{__('Resources')}}</a>
+                        <li><a href="{{ route('directory') }}">{{__('Directory')}}</a>
                         <li><a href="{{ route('projects') }}">{{__('Blog')}}</a>
                         <li><a href="contact.html">{{__('Contact Us')}}</a></li>
                     </ul>
