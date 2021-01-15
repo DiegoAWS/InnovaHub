@@ -1,18 +1,37 @@
-<div class="thumbnail">
-    <img 
+<div class="thumbnail myCard @if(isset($mainClass)) {{ $mainClass }} @endif" id={{ $id }}>
+  <img @if(isset($image)) src={{ $image }} @else src="/imagesTest/Image0.jpg" @endif class="imgCard" alt="" />
 
-    @if(!isset($i))
- src= "/imagesTest/Image0.jpg"
- @else
-  src= "/imagesTest/Image{{ $i % 5 }}.jpg"
-@endif
-  
-    class="imgCard"
-    alt="...">
-    <div class="caption">
-      <h3>Thumbnail label</h3>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque reprehenderit labore iure, accusamus autem voluptatibus. </p>
-      <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default"
-          role="button">Button</a></p>
+
+  <div class="caption">
+
+    <div class="cardTitle"> @if(isset($title)) {{ $title }} @else {{ "Cabilla Corrugada" }} @endif
+      <div class="cardShare"> <i class="fa fa-share-alt" aria-hidden="true"></i></div>
+    </div>
+
+    <div class="cardFooter">
+
+      <div class="cardCart"><i class="fa fa-shopping-cart fa-lg" aria-hidden="true"></i></div>
+
+      <div class="cardStars">
+        @for ($i = 0; $i < 5; $i++) @if(!isset($stars)) <i class="fa fa-star-o" aria-hidden="true"></i>
+          @else
+
+          @if($stars-1 > $i*2) <i class="fa fa-star" aria-hidden="true"></i>
+          @endif
+
+          @if($stars -1==$i*2)
+          <i class="fa fa-star-half-o" aria-hidden="true"></i>
+          @endif
+
+          @if($stars-1 <$i*2) <i class="fa fa-star-o" aria-hidden="true"></i>
+            @endif
+            @endif
+            @endfor
+
+      </div>
+
+      <div class="cardCalendar"><i class="fa fa-calendar-o fa-lg" aria-hidden="true"></i></div>
+
     </div>
   </div>
+</div>

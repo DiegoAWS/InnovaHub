@@ -63,7 +63,6 @@ mix
 
   
 
-
     // VENDOR JS
     .combine(['resources/ui-template/js/jquery.js',
         'resources/ui-template/js/bootstrap.min.js',
@@ -89,7 +88,7 @@ mix
         'resources/ui-template/js/wow.js',
         'resources/ui-template/js/mixitup.js',
         'resources/ui-template/js/main-slider-script.js',
-        'resources/ui-template/js/script.js',
+        'resources/ui-template/js/script.js'
     ], 'public/js/vendor.js').version()
 
 

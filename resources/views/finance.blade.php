@@ -105,7 +105,7 @@
                 <div class="clearfix">
 
                     <div class="logo-outer">
-                        <div class="logo"><a href="index.html"><img src="images/logo.png" alt="" title="" style="width: 30%"></a></div>
+                        <div class="logo"><a href="index.html"><img src={{ asset("images/logo.png") }} alt="" title="" style="width: 30%"></a></div>
                     </div>
 
                     <div class="upper-right clearfix">

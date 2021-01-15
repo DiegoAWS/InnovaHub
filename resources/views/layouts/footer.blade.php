@@ -41,7 +41,7 @@
                     <div class="footer-widget logo-widget">
                         <div class="widget-content">
                             <div class="footer-logo">
-                                <a href="index.html"><img src="images/logo.png" alt=""/></a>
+                                <a href="index.html"><img src={{ asset("images/logo.png") }} alt=""/></a>
                             </div>
                             <div class="text">
                                 <p>Everyone here is an innovator, or an innovator-to-be. That’s how we create the kinds of products and experiences that few ever imagine. For example, engineers here developed frameworks that have transformed the speed and accuracy of medical research. Others figured out how people in wheelchairs can track their activity with their cellphones to promote their fitness. Our retail teams revolutionized the industry by reinventing the entire customer experience. And each day at lunch, the environmentally friendly pizza box patented by a chef in our café reminds us that innovation comes from everyone in every role at our company.</p>
@@ -79,7 +79,7 @@
                         <div class="widget-content">
                             <!--Post-->
                             <div class="post">
-                                <div class="img-box"><a href="#"><img src="imagesTest/footerImage1.jpg" alt=""></a>
+                                <div class="img-box"><a href="#"><img src={{ asset( "imagesTest/footerImage1.jpg") }} alt=""></a>
                                 </div>
                                 <div class="content">
                                     <div class="time">14 August, 2017</div>
@@ -88,7 +88,7 @@
                             </div>
                             <!--Post-->
                             <div class="post">
-                                <div class="img-box"><a href="#"><img src="imagesTest/footerImage2.jpg" alt=""></a>
+                                <div class="img-box"><a href="#"><img src={{ asset( "imagesTest/footerImage2.jpg") }} alt=""></a>
                                 </div>
                                 <div class="content">
                                     <div class="time">22 July, 2017</div>
