@@ -1,9 +1,12 @@
-.shadows{
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+.shadows{    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
-.flex{
-    display:flex;
-}
+.w-full { width:100% !important;}
+.h-full { height:100% !important;}
+.w-50 {width:50% !important;}
+
+
+
+.flex { display:flex !important;}
 
 .justify-start   { justify-content: flex-start !important; }
 .justify-end     { justify-content: flex-end !important; }
@@ -16,3 +19,4 @@
 .align-center   { align-items: center !important; }
 .align-baseline { align-items: baseline !important; }
 .align-stretch  { align-items: stretch !important; }
+
