@@ -2305,8 +2305,8 @@ section.about-section {
 }
 
 .detailsBackButton {
-  height: 15px;
-  width: 15px;
+  height: 25px;
+  width: 25px;
   display: flex !important;
   justify-content: center;
   align-items: center;
@@ -2356,8 +2356,22 @@ section.about-section {
 }
 
 .detailsSubContainer {
-  border: 2px solid gainsboro;
-  padding: 3rem;
+  border: 1px solid gainsboro;
+  flex-direction: column;
+}
+
+@media only screen and (max-width: 640px) {
+  .smallFull {
+    width: 100% !important;
+  }
+}
+
+@media only screen and (min-width: 640px) {
+  .detailsSubContainer {
+    border: 2px solid gainsboro;
+    padding: 3rem;
+    flex-direction: row;
+  }
 }
 
 .shadows {
@@ -2373,7 +2387,15 @@ section.about-section {
 }
 
 .w-50 {
-  width: 50% !important;
+  width: 50%;
+}
+
+.w-40 {
+  width: 40%;
+}
+
+.w-60 {
+  width: 60%;
 }
 
 .flex {
@@ -2422,6 +2444,7 @@ section.about-section {
 
 .myCard {
   padding: 0px !important;
+  cursor: pointer;
 }
 
 .imgCard {

@@ -1,29 +1,28 @@
-$blueColor:rgb(0, 195, 255);
+$blueColor: rgb(0, 195, 255);
 
-.myCard{
-padding: 0px !important;
+.myCard {
+    padding: 0px !important;
+    cursor: pointer;
 }
 
-.imgCard{
-     width:100%;
+.imgCard {
+    width: 100%;
     height: 200px !important;
     object-fit: cover;
     object-position: center;
-
 }
 
-.cardTitle{
-position: relative;
+.cardTitle {
+    position: relative;
     font-size: large;
     text-align: center;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
     padding: 0 20px;
-
 }
 
-.cardShare{
+.cardShare {
     position: absolute;
 
     right: 0px;
@@ -36,21 +35,20 @@ position: relative;
     color: white;
     background-color: $blueColor;
     border-radius: 100%;
-    i{
+    i {
         font-size: 14px;
     }
 }
 
 .cardCart,
-.cardCalendar{
-    color:$blueColor;
+.cardCalendar {
+    color: $blueColor;
 }
 
-.cardFooter{
-
-    display:flex;
+.cardFooter {
+    display: flex;
     justify-content: space-between;
 }
-.cardStars{
-    color:#ff4162;
+.cardStars {
+    color: #ff4162;
 }

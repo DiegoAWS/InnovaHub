@@ -1,4 +1,4 @@
-<div id="directoryContainer" class="m-0 m-sm-2 m-md-5">
+<div id="directoryContainer" class="m-xs-1 m-sm-3 m-md-5">
     <div id="directorioView">
 
         <div class="mx-15vw my-xs-2 my-sm-3 my-md-4 my-xl-5">
