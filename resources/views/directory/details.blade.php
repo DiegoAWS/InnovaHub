@@ -1,4 +1,4 @@
-<div class="auto-container mx-xs-1 mx-sm-2 mx-md-3">
+<div class="auto-container mx-xs-1 mx-sm-2 mx-md-3" style="max-width: none;">
     <a href="/directory" class="btn btn-primary detailsBackButton" data-navigo><i class="fa fa-chevron-circle-left fa-xl" aria-hidden="true"></i></a>
     <div class="row clearfix">
         <div class="flex detailsSubContainer">
