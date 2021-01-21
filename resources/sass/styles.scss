@@ -54,6 +54,14 @@ section.about-section {
         display: none;
     }
 }
+@media only screen and (max-width: 1215px) {
+    .detailsView{
+       padding: 0px 15px;
+    }
+  
+}
+
+
 .searchBar {
     display: flex;
     padding-left: 20px;
@@ -114,15 +122,15 @@ section.about-section {
 }
 .detailsSubContainer {
     border: 1px solid gainsboro;
-    flex-direction: column;
+    flex-direction: column-reverse;
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 767px) {
     .smallFull {
         width: 100% !important;
     }
 }
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 768px) {
     .detailsSubContainer {
         border: 2px solid gainsboro;
         padding: 3rem;
@@ -142,7 +150,15 @@ section.about-section {
         display: flex;
     }
 }
-
+.squareIcon{
+      width: 30px;
+    height: 30px;
+    background-color: #0064ff;
+    border-radius: 100px;
+    padding: 6px;
+    padding: 5px;
+    cursor: pointer;
+}
 .handShakeIcon {
     width: 30px;
     height: 30px;
@@ -156,6 +172,9 @@ section.about-section {
     height: 30px;
     border-radius: 100px;
     padding: 6px 3px;
+    cursor: pointer;
+}
+.icPointer{
     cursor: pointer;
 }
 .iconDetailsContainer {
@@ -173,4 +192,7 @@ section.about-section {
     display: flex;
     font-size: 1.5rem;
     font-weight :bold;
+}
+.brouchure-widget{
+    padding-right: 40px;
 }

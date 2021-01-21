@@ -1,6 +1,6 @@
-<div class="auto-container mx-xs-1 mx-sm-2 mx-md-3" style="max-width: none;">
+<div class="auto-container detailsView" >
     <a href="/directory" class="btn btn-primary detailsBackButton" data-navigo><i class="fa fa-chevron-circle-left fa-xl" aria-hidden="true"></i></a>
-    <div class="row clearfix">
+    <div class="clearfix">
         <div class="flex detailsSubContainer">
             <div class="w-60 smallFull p-4">
                 <div id="detailsTitle" class="TituloDetails"></div>
@@ -19,21 +19,21 @@
                 <div class="sidebar-widget brouchure-widget mt-5">
 
                     <div class="row ">
-                        <div class="col-xs-12 col-sm-4  flex align-center">
+                        <div class="col-xs-12 col-md-4  flex align-center">
                             <h3 class="text-muted mt-5">
-                                Documentación
+                            {{__('Documentation')}}
                             </h3>
                         </div>
 
-                        <div class="col-xs-11 col-sm-7">
+                        <div class="col-xs-12 col-md-7">
                             <div class="inner-box">
                                 <h2>Download Brochures</h2>
                                 <ul class="boucher">
                                     <li>
-                                        <h5><span>Pdf</span>Research Results<i class="fa fa-download"></i></h5>
+                                        <h5><span>Pdf</span>{{__('ResearchResults')}}<i class="icPointer fa fa-download"></i></h5>
                                     </li>
                                     <li>
-                                        <h5><span>Doc</span>Service Brochure<i class="fa fa-download"></i></h5>
+                                        <h5><span>Doc</span>{{__('ServiceBrochure')}}<i class="icPointer fa fa-download"></i></h5>
                                     </li>
                                 </ul>
                             </div>
@@ -47,19 +47,19 @@
                                     <th class="valueTable"></th>
                                 </tr>
                                 <tr>
-                                    <td class="text-primary celdaTable">Sector</td>
-                                    <td>:</td>
+                                    <td class="text-primary celdaTable">{{__('Sector')}} :</td>
+                                   
                                     <td>Infocomunicaciones / Servicios Tecnológicos y empresariales para el Turismo</td>
                                 </tr>
                                 <tr>
-                                    <td class="text-primary celdaTable">Sector</td>
-                                    <td>:</td>
-                                    <td>Infocomunicaciones / Servicios Tecnológicos</td>
+                                    <td class="text-primary celdaTable">{{__('Type')}}   :</td>
+                                    
+                                    <td>Empresa Estatal</td>
                                 </tr>
                                 <tr>
-                                    <td class="text-primary celdaTable">Sector</td>
-                                    <td>:</td>
-                                    <td>Infocomunicaciones / Servicios Tecnológicos</td>
+                                    <td class="text-primary celdaTable">{{__('Size')}} :</td>
+                                   
+                                    <td>+500 empleados</td>
                                 </tr>
 
                             </table>
@@ -104,18 +104,18 @@
                     <!--Contact Category-->
                     <div class="sidebar-widget contact-widget">
                         <div class="inner-box">
-                            <h2>Contact Us</h2>
-                            <div class="text">Please contact us today! Our experts always ready to help you.</div>
+                            <h2>{{__('ContactUs')}}</h2>
+                            <div class="text">{{__('PleaseContac')}}</div>
                             <ul>
                                 <li><i class="fa fa-map-marker"></i>Rock St 12, Newyork, USA</li>
-                                <li><i class="fa fa-phone"></i>Phone: +44 567 890123</li>
+                                <li><i class="fa fa-phone"></i>{{__('Phone')}}: +44 567 890123</li>
                             </ul>
-                            <a href="#" class="contact-btn theme-btn btn-style-three">Get Quote free</a>
+                            <a href="#" class="contact-btn theme-btn btn-style-three">{{__('GetQ')}}</a>
                         </div>
                     </div>
                     <div class="flex">
                         <div class="mx-5">
-                            <div class="handShakeIcon " style="padding: 5px;">
+                            <div class="squareIcon " >
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="white">
                                     <path d="M352 320c-22.608 0-43.387 7.819-59.79 20.895l-102.486-64.054a96.551 96.551 0 0 0 0-41.683l102.486-64.054C308.613 184.181 329.392 192 352 192c53.019 0 96-42.981 96-96S405.019 0 352 0s-96 42.981-96 96c0 7.158.79 14.13 2.276 20.841L155.79 180.895C139.387 167.819 118.608 160 96 160c-53.019 0-96 42.981-96 96s42.981 96 96 96c22.608 0 43.387-7.819 59.79-20.895l102.486 64.054A96.301 96.301 0 0 0 256 416c0 53.019 42.981 96 96 96s96-42.981 96-96-42.981-96-96-96z" />
                                 </svg>
@@ -124,7 +124,7 @@
 
                         </div>
                         <div class="mx-5">
-                            <div class="handShakeIcon " style="padding: 5px;">
+                            <div class="squareIcon">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="white">
                                     <path d="M12 192h424c6.6 0 12 5.4 12 12v260c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V204c0-6.6 5.4-12 12-12zm436-44v-36c0-26.5-21.5-48-48-48h-48V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H160V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H48C21.5 64 0 85.5 0 112v36c0 6.6 5.4 12 12 12h424c6.6 0 12-5.4 12-12z" />
                                 </svg>

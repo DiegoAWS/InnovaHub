@@ -58,7 +58,7 @@
                                 </li style="margin-right: 0px;">
 
                                 <li style="margin-right: 15px;">
-                                    <a href="{{ route('directory') }}">{{__('Directorio')}}</a>
+                                    <a href="{{ route('directory') }}">{{__('Directory')}}</a>
                                 </li style="margin-right: 0px;">
 
                                 <li style="margin-right: 15px;">

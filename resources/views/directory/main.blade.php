@@ -1,14 +1,14 @@
-<div id="directoryContainer" class="m-xs-1 m-sm-3 m-md-5">
+<div id="directoryContainer" class="auto-container">
     <div id="directorioView">
 
-        <div class="mx-15vw my-xs-2 my-sm-3 my-md-4 my-xl-5">
+        <div class="my-xs-2 my-sm-3 my-md-4 my-xl-5">
             <div class="row">
 
                 <div class="col-xs-6 col-md-4">
                     @include("material.textField",
                     [
                     "id"=>"searchName",
-                    "label"=>"Nombre",
+                    "label"=>__('Name'),
                     "class"=>"",
                     "inputClass"=>""
                     ]
@@ -18,14 +18,14 @@
                     @include("material.textField",
                     [
                     "id"=>"searchCateg",
-                    "label"=>"Categoria",
+                    "label"=>__('Category'),
                     "class"=>"",
                     "inputClass"=>""
                     ]
                     )
                 </div>
                 <div class=" col-xs-12 col-md-4 mt-xs-1 mt-xs-3 mt-md-0">
-                    <button type="button" class="btn btn-primary w-full">Search</button>
+                    <button type="button" class="btn btn-primary w-full">{{__('Search')}}</button>
                 </div>
             </div>
         </div>
@@ -58,7 +58,8 @@
                 ]))
 
 
-                @for ($i = 0; $i < 11; $i++) <div class="col-sm-6 col-md-4 col-lg-3">
+                @for ($i = 0; $i < 11; $i++) 
+                <div class="col-sm-6 col-md-4 col-lg-3">
 
                     @include("material.card",
                     [
@@ -69,32 +70,32 @@
                     "mainClass"=>"directoryCard"
                     ])
 
+                 </div>
+                @endfor
+
+
+
+
             </div>
-            @endfor
+            <div class="flex justify-end">
 
 
+                <nav>
+                    <ul class="pagination">
+                        <li class="disabled"><a href="#"><span>&laquo;</span></a></li>
+                        <li class="active"><a href="#">1 </a></li>
+                        <li class=""><a href="#">2</a></li>
+                        <li class=""><a href="#">3</a></li>
+                        <li class=""><a href="#">4</a></li>
+                        <li class=""><a href="#">5</a></li>
+                        <li class=""><a href="#"><span> &raquo;</span></a></li>
 
-
-        </div>
-        <div class="flex justify-end">
-
-
-            <nav>
-                <ul class="pagination">
-                    <li class="disabled"><a href="#"><span>&laquo;</span></a></li>
-                    <li class="active"><a href="#">1 </a></li>
-                    <li class=""><a href="#">2</a></li>
-                    <li class=""><a href="#">3</a></li>
-                    <li class=""><a href="#">4</a></li>
-                    <li class=""><a href="#">5</a></li>
-                    <li class=""><a href="#"><span> &raquo;</span></a></li>
-
-                </ul>
-            </nav>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </div>
 </div>
 <div id="detailsView">
     @include('directory.details')
-</div>
 </div>

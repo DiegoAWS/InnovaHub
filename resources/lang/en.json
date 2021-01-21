@@ -3,5 +3,21 @@
     "AboutOur":"About Our Company",
     "AboutOurText1":"We bring amazing people together to make amazing things happen.",
     "AboutOurText2":"We’re a diverse collective of thinkers and doers, continuously reimagining our products and practices to help people do what they love in new ways. That innovation is inspired by a shared commitment to great work — and to each other. Because learning from the people here means we’re learning from the best.",
-    "AboutFounder": "CEO & Founder"
+    "AboutFounder": "CEO & Founder",
+
+    "Directory": "Directory",
+    "Name": "Name",
+    "Category": "Category",
+    "Search": "Search",
+    "Documentation": "Documentation",
+    "DownloadBrochures": "Download Documents",
+    "ResearchResults": "Research Results",
+    "ServiceBrochure": "Dossier de Servicios",
+    "Sector": "Sector",
+    "Type": "Type",
+    "Size": "Size",
+    "ContactUs": "Contact us",
+    "PleaseContac": "Please contact us today? Our experts are always ready to help you",
+    "Phone": "Phone",
+    "GetQ":"Get Quote free"
 }

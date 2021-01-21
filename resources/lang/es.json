@@ -37,7 +37,25 @@
 
     "AboutOurText1": "Juntamos a personas increíbles para hacer lo increíble realidad.",
     "AboutOurText2": "Somos un grupo plural de pensadores y creadores que, día a día, reinventamos nuestros productos y maneras de trabajar para ayudar a la gente a hacer lo que más le gusta de formas completamente nuevas. Esa innovación surge del compromiso compartido de hacer un gran trabajo y ayudarnos unos a otros. Porque aquí aprender de los demás significa aprender de los mejores.",
-    "AboutFounder": "CEO & Fundador"
+    "AboutFounder": "CEO & Fundador",
+
+
+    "Directory":"Directorio",
+    "Name":"Nombre",
+    "Category":"Categoría",
+    "Search":"Buscar",
+    "Documentation":"Documentación",
+    "DownloadBrochures":"Descargar Documentos",
+    "ResearchResults":"Resultados de la Investigación",
+    "ServiceBrochure":"Dossier de Servicios",
+    "Sector":"Sector",
+    "Type":"Tipo",
+    "Size":"Tamaño",
+    "ContactUs":"Contáctenos",
+    "PleaseContac":"Por favor contáctenos hoy? Nuestros expertos siempre están listos para ayudarles",
+    "Phone":"Teléfono",
+    "GetQ":"Obtener Boletín gratis"
+
  
 
 

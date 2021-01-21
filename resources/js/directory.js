@@ -47,7 +47,7 @@ window.onload = function (e) {
 
 
 
-    const directorioView = document.getElementById("directorioView")
+    const directoryContainer = document.getElementById("directoryContainer")
     const detailsView = document.getElementById("detailsView")
 
     const detailsTitle = document.getElementById("detailsTitle")
@@ -63,8 +63,8 @@ window.onload = function (e) {
 
     router.on('/directory', function () {
 
-        directorioView.className = ""
-        detailsView.className = "hidden"
+        directoryContainer.style.display="block"
+        detailsView.style.display = "none"
 
         window.scrollTo(0, 0)
     });
@@ -76,8 +76,8 @@ window.onload = function (e) {
         detailsDescription.innerText = info.description
         detailsImage.src= info.image
 
-        directorioView.className = "hidden"
-        detailsView.className = ""
+        directoryContainer.style.display = "none"
+        detailsView.style.display = "block"
         window.scrollTo(0, 0)
     });
     router.resolve();
