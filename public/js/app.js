@@ -148,9 +148,9 @@ eval("// removed by extract-text-webpack-plugin//# sourceURL=[module]\n//# sourc
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /home/diego/w/InnovaHub/hub/resources/js/app.js */"./resources/js/app.js");
-__webpack_require__(/*! /home/diego/w/InnovaHub/hub/resources/sass/app.scss */"./resources/sass/app.scss");
-module.exports = __webpack_require__(/*! /home/diego/w/InnovaHub/hub/resources/css/custom.scss */"./resources/css/custom.scss");
+__webpack_require__(/*! /Users/qwerty/WORK/hub/InnovaHub/resources/js/app.js */"./resources/js/app.js");
+__webpack_require__(/*! /Users/qwerty/WORK/hub/InnovaHub/resources/sass/app.scss */"./resources/sass/app.scss");
+module.exports = __webpack_require__(/*! /Users/qwerty/WORK/hub/InnovaHub/resources/css/custom.scss */"./resources/css/custom.scss");
 
 
 /***/ })

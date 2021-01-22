@@ -27,7 +27,7 @@
 
                         <div class="col-xs-12 col-md-7">
                             <div class="inner-box">
-                                <h2>Download Brochures</h2>
+                                <h2>{{__('DownloadBrochures')}}</h2>
                                 <ul class="boucher">
                                     <li>
                                         <h5><span>Pdf</span>{{__('ResearchResults')}}<i class="icPointer fa fa-download"></i></h5>
@@ -48,17 +48,17 @@
                                 </tr>
                                 <tr>
                                     <td class="text-primary celdaTable">{{__('Sector')}} :</td>
-                                   
+
                                     <td>Infocomunicaciones / Servicios Tecnológicos y empresariales para el Turismo</td>
                                 </tr>
                                 <tr>
                                     <td class="text-primary celdaTable">{{__('Type')}}   :</td>
-                                    
+
                                     <td>Empresa Estatal</td>
                                 </tr>
                                 <tr>
                                     <td class="text-primary celdaTable">{{__('Size')}} :</td>
-                                   
+
                                     <td>+500 empleados</td>
                                 </tr>
 
