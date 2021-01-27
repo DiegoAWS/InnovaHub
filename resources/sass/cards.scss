@@ -14,7 +14,6 @@ $blueColor: rgb(0, 195, 255);
 }
 
 .cardTitle {
-    position: relative;
     font-size: large;
     text-align: center;
     overflow: hidden;
@@ -23,11 +22,22 @@ $blueColor: rgb(0, 195, 255);
     padding: 0 20px;
 }
 
-.cardShare {
-    position: absolute;
 
-    right: 0px;
-    top: 0px;
+
+.cardCart,
+.cardCalendar {
+    color: $blueColor;
+}
+
+.cardFooter {
+    padding-top: 5px;
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.cardShare {
+    margin-top: 2px;
     height: 17px;
     width: 17px;
     display: flex;
@@ -41,18 +51,7 @@ $blueColor: rgb(0, 195, 255);
     }
 }
 
-.cardCart,
-.cardCalendar {
-    color: $blueColor;
-}
 
-.cardFooter {
-    display: flex;
-    justify-content: space-between;
-}
-.cardStars {
-    color: #ff4162;
-}
 .cartIconButton{
     cursor: pointer;
 }

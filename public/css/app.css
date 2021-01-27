@@ -2534,7 +2534,6 @@ section.about-section {
 }
 
 .cardTitle {
-  position: relative;
   font-size: large;
   text-align: center;
   overflow: hidden;
@@ -2543,10 +2542,21 @@ section.about-section {
   padding: 0 20px;
 }
 
+.cardCart,
+.cardCalendar {
+  color: #00c3ff;
+}
+
+.cardFooter {
+  padding-top: 5px;
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
 .cardShare {
-  position: absolute;
-  right: 0px;
-  top: 0px;
+  margin-top: 2px;
   height: 17px;
   width: 17px;
   display: flex;
@@ -2559,20 +2569,6 @@ section.about-section {
 
 .cardShare i {
   font-size: 14px;
-}
-
-.cardCart,
-.cardCalendar {
-  color: #00c3ff;
-}
-
-.cardFooter {
-  display: flex;
-  justify-content: space-between;
-}
-
-.cardStars {
-  color: #ff4162;
 }
 
 .cartIconButton {
