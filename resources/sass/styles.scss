@@ -58,7 +58,7 @@ section.about-section {
     .detailsView{
        padding: 0px 15px;
     }
-  
+
 }
 
 
@@ -148,6 +148,7 @@ section.about-section {
     }
     .celdaTable {
         display: flex;
+        white-space: nowrap;
     }
 }
 .squareIcon{

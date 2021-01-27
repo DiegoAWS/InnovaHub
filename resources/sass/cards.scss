@@ -2,7 +2,7 @@ $blueColor: rgb(0, 195, 255);
 
 .myCard {
     padding: 0px !important;
-    cursor: pointer;
+
 }
 
 .imgCard {
@@ -10,6 +10,7 @@ $blueColor: rgb(0, 195, 255);
     height: 200px !important;
     object-fit: cover;
     object-position: center;
+    cursor: pointer;
 }
 
 .cardTitle {
@@ -51,4 +52,10 @@ $blueColor: rgb(0, 195, 255);
 }
 .cardStars {
     color: #ff4162;
+}
+.cartIconButton{
+    cursor: pointer;
+}
+.cartIconButton:hover{
+    transform: scale(1.2) translate(-2px, 2px);
 }

@@ -1,10 +1,11 @@
+
 <div id="directoryContainer" class="auto-container">
     <div id="directorioView">
 
-        <div class="my-xs-2 my-sm-3 my-md-4 my-xl-5">
+        <div class="my-xs-2 my-sm-3 my-md-4 my-xl-5 container-fluid">
             <div class="row">
 
-                <div class="col-xs-6 col-md-4">
+                <div class="col-xs-12 col-md-4">
                     @include("material.textField",
                     [
                     "id"=>"searchName",
@@ -14,22 +15,15 @@
                     ]
                     )
                 </div>
-                <div class="col-xs-6 col-md-4">
-                    @include("material.textField",
-                    [
-                    "id"=>"searchCateg",
-                    "label"=>__('Category'),
-                    "class"=>"",
-                    "inputClass"=>""
-                    ]
-                    )
+                <div  class="col-xs-12 col-md-6 mt-xs-3 mt-md-0">
+                <div id="multiSelect2">
                 </div>
-                <div class=" col-xs-12 col-md-4 mt-xs-1 mt-xs-3 mt-md-0">
-                    <button type="button" class="btn btn-primary w-full">{{__('Search')}}</button>
+                </div>
+                <div class=" col-xs-12 col-md-2 mt-xs-1 mt-xs-3 mt-md-0" style="height:37px;">
+                    <button id="searchDirectoryButton" type="button" class="btn btn-primary w-full h-full">{{__('Search')}}</button>
                 </div>
             </div>
         </div>
-
 
         <div class="directoryContent container-fluid my-xs-2 my-sm-3 my-md-4 my-xl-5">
 
@@ -58,8 +52,8 @@
                 ]))
 
 
-                @for ($i = 0; $i < 11; $i++) 
-                <div class="col-sm-6 col-md-4 col-lg-3">
+                @for ($i = 0; $i < 11; $i++)
+                <div class="col-sm-6 col-md-4 col-lg-3 directoryCardWrapper" id="{{ $i }}">
 
                     @include("material.card",
                     [

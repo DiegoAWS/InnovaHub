@@ -1,9 +1,9 @@
 $animationSpeed: 0.3s;
 
 .material-textfield {
-    position: relative;  
+    position: relative;
     height: fit-content;
-  
+
   label {
     position: absolute;
     font-size: 1.2rem;
@@ -19,16 +19,16 @@ $animationSpeed: 0.3s;
     pointer-events: none;
   }
   input {
-    font-size: 1rem;
+    font-size: 1.7rem;
     outline: none;
     border: 1px solid gray;
-    border-radius: 5px;  
+    border-radius: 5px;
     padding: 0.5rem 0.7rem;
     color: gray;
     transition: $animationSpeed ease-out;
   }
   input:focus {
-    border-color: #6200EE;  
+    border-color: #6200EE;
   }
   input:focus + label {
     color: #6200EE;
