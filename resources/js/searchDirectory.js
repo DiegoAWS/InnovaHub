@@ -61,8 +61,10 @@ let mySelect = new MultiSelect2("#multiSelect2", {
     placeholder: "Test",
     onChange: value => {
         let changePh = document.getElementById("ph");
-        if (value.length === 0) changePh.style.display = "block";
-        else changePh.style.display = "none";
+        if (value.length === 0) {
+            changePh.classList.remove("phRetracted")
+        }
+        else changePh.classList.add("phRetracted")
 
         valuesSelect=value;
     }

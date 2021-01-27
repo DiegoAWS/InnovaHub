@@ -74,6 +74,7 @@
     display: inline;
     white-space: nowrap;
     overflow: hidden;
+    z-index: 2;
 }
 
 .multi-select__selected-label {
@@ -120,4 +121,13 @@
     font-size: 1.2rem;
     color: gray;
     font-weight: 700;
+    background: white;
+    position: absolute;
+    transition: 0.3s ease-out;
+}
+.phRetracted {
+    color: #6200ee !important;
+    top: 0;
+    left: 0;
+    transform: translateY(-50%) translateX(-15px) scale(0.9);
 }
