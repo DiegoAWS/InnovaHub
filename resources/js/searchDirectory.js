@@ -60,15 +60,13 @@ let mySelect = new MultiSelect2("#multiSelect2", {
     icon: "fa fa-times",
     placeholder: "Categorías",
     onChange: value => {
-
-
         valuesSelect=value;
     }
 });
-console.log(mySelect)
 
 
-mySelect._firstActive = function(val) {};
+
+
 searchDirectoryButton.onclick = function() {
     console.log("search", searchName.value);
     console.log("Filter", valuesSelect);

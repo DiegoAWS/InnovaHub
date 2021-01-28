@@ -2920,7 +2920,11 @@ section.about-section {
   background-size: contain;
 }
 
-.myModalShare {
-  display: none;
+.myModalShow {
+  display: flex !important;
+}
+
+.myModalHide {
+  display: none !important;
 }
 

@@ -22,8 +22,11 @@ let modalContent = document.getElementsByClassName("myModalContent");
 for (let j = 0; j < modalShare.length; j++) {
     let modalItem = modalShare[j];
 
-    modalItem.addEventListener("click", function() {
-        this.style.display = "none";
+    modalItem.addEventListener("click", function(e) {
+        e.stopImmediatePropagation();
+        console.log(this.className);
+        this.className = "myModalShare myModalHide";
+        console.log(this.className);
     });
 }
 
@@ -34,26 +37,34 @@ for (let j = 0; j < modalContent.length; j++) {
 }
 //Agregando MOSTRAR MODAL SHARE en las CARD
 for (let i = 0; i < cardShare.length; i++) {
-    cardShare[i].addEventListener("click", function() {
+    cardShare[i].addEventListener("click", function(e) {
+        e.stopImmediatePropagation();
         let cardItemId = this.getAttribute("data-idCard");
 
         for (let j = 0; j < modalShare.length; j++) {
             let modalItem = modalShare[j];
             let modalItemId = modalItem.getAttribute("data-idShare");
-
+            console.log("CHILD", cardItemId, modalItemId);
             if (cardItemId === modalItemId) {
-                modalItem.style.display = "flex";
+                console.log(modalItem);
+                modalItem.className = "myModalShare myModalShow";
             }
         }
     });
 }
-let shareButtonDetails = document.getElementById("shareButtonDetails");
+// let shareButtonDetails = document.getElementById("shareButtonDetails");
 
-shareButtonDetails.addEventListener("click", function() {
-    console.log(this)
-    // this.firstChild.style.display = "flex";
-});
+// shareButtonDetails.addEventListener("click", function(e) {
+//     console.log("CHILD", this.firstElementChild);
 
+//     if (this.firstElementChild.className.includes("myModalHide")) {
+//         console.log(this.firstElementChild.className);
+//         this.firstElementChild.className = "myModalShare myModalShow";
+//         console.log(this.firstElementChild.className);
+//     }
+// });
+
+//#region
 var dataFromServer = [
     {
         title: "HARDVARD University",
@@ -86,6 +97,7 @@ var dataFromServer = [
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea aperiam assumenda, quae error soluta odio consequatur, incidunt ducimus molestiae sed eveniet. Rerum, modi aliquid ipsum ea recusandae itaque voluptatum libero minima sit iusto asperiores facere eaque, dicta quam vel maiores, provident sunt unde iste blanditiis sint commodi in doloribus illo! Sit temporibus laudantium pariatur ipsa excepturi molestias inventore veritatis similique maxime! Numquam ipsam repellendus at optio expedita reiciendis laborum non ad aut, odit similique explicabo! Eum commodi repellat ducimus labore quisquam ad dolorum vero eius quas animi veniam, quod voluptate, impedit temporibus possimus quidem qui officia ea nesciunt, neque fugit?"
     }
 ];
+//#endregion
 
 const directoryContainer = document.getElementById("directoryContainer");
 const detailsView = document.getElementById("detailsView");

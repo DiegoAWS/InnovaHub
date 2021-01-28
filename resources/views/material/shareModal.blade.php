@@ -6,12 +6,12 @@
     if($counter>0)
     $id=$arrayUrl[$counter-1];
     else
-    $id=0;
+    $id=-1;
 ?>
  @endif
 
 
-<div class="myModalShare" data-idShare={{ $id }}>
+<div class="myModalShare myModalHide" data-idShare={{ $id }}>
 
 
     <div class="myModalOverlay">
