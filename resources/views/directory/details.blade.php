@@ -112,27 +112,54 @@
                             <div class="text">{{__('PleaseContac')}}</div>
                         </div>
                     </div>
-                    <div class="flex">
-                        <div class="mx-5">
-                            <div class="squareIcon cartIconButton" id="shareButtonDetails">
-
-
-
-                                @include("material.shareModal", [ "id"=>1])
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="white">
-                                    <path d="M352 320c-22.608 0-43.387 7.819-59.79 20.895l-102.486-64.054a96.551 96.551 0 0 0 0-41.683l102.486-64.054C308.613 184.181 329.392 192 352 192c53.019 0 96-42.981 96-96S405.019 0 352 0s-96 42.981-96 96c0 7.158.79 14.13 2.276 20.841L155.79 180.895C139.387 167.819 118.608 160 96 160c-53.019 0-96 42.981-96 96s42.981 96 96 96c22.608 0 43.387-7.819 59.79-20.895l102.486 64.054A96.301 96.301 0 0 0 256 416c0 53.019 42.981 96 96 96s96-42.981 96-96-42.981-96-96-96z" />
-                                </svg>
-                            </div>
-
-
-                        </div>
-                        <div class="mx-5">
+                    <div class="sidebar-widget contact-widget">
+                        <div class="inner-box">
+                            <h2>Agendar Cita</h2>
+                            <div class="mx-5">
                             <div class="squareIcon cartIconButton">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="white">
                                     <path d="M12 192h424c6.6 0 12 5.4 12 12v260c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V204c0-6.6 5.4-12 12-12zm436-44v-36c0-26.5-21.5-48-48-48h-48V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H160V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H48C21.5 64 0 85.5 0 112v36c0 6.6 5.4 12 12 12h424c6.6 0 12-5.4 12-12z" />
                                 </svg>
                             </div>
                         </div>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-widget contact-widget">
+                        <div class="inner-box">
+                            <h2>Compartir</h2>
+
+                            <div class="flex">
+                                <div class="mx-5">
+                                <?php
+                                $url = $_SERVER["REQUEST_URI"];
+                                $arrayUrl = explode("/", $url);
+                                $counter = count($arrayUrl);
+                                if ($counter > 0)
+                                    $id = $arrayUrl[$counter - 1];
+                                else
+                                    $id = -1;
+                                ?>
+                                    @php($myUrl = url('/directory/detail/'.$id))
+                                    @php($myTitle = "InnovaHub")
+
+                                    <div class="shareon" data-url={{ $myUrl }} data-title={{ $myTitle }}>
+                                        <a class="facebook"></a>
+                                        <a class="email" href="mailto:?subject={{ $myTitle }}&amp;body={{ $myUrl }}"></a>
+                                        <a class="pinterest" data-media="https://picsum.photos/500"></a>
+                                        <a class="reddit"></a>
+                                        <a class="telegram" data-text={{ $myTitle }}></a>
+                                        <a class="twitter" data-via=""></a>
+                                        <a class="mastodon" data-via=""></a>
+                                        <a class="whatsapp"></a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+
                     </div>
                 </aside>
             </div>

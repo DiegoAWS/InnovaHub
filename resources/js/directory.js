@@ -51,15 +51,7 @@ for (let i = 0; i < cardShare.length; i++) {
         }
     });
 }
-let shareButtonDetails = document.getElementById("shareButtonDetails");
 
-shareButtonDetails.addEventListener("click", function(e) {
-
-    console.log("CHILD", this.firstElementChild.firstElementChild.hidden);
-if(this.firstElementChild.firstElementChild.hidden)
-this.firstElementChild.firstElementChild.hidden=false
-
-});
 
 //#region
 var dataFromServer = [
