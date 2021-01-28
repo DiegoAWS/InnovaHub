@@ -1,20 +1,9 @@
-@if(!isset($id))
-<?php
-    $url=$_SERVER["REQUEST_URI"];
-    $arrayUrl=explode("/",$url);
-    $counter=count($arrayUrl);
-    if($counter>0)
-    $id=$arrayUrl[$counter-1];
-    else
-    $id=-1;
-?>
- @endif
 
 
-<div class="myModalShare myModalHide" data-idShare={{ $id }}>
+<div  class="myModalShare" data-idShare={{ $id }}>
 
 
-    <div class="myModalOverlay">
+    <div hidden class="myModalOverlay">
         <div class="myModalContent">
 
             @php($myUrl = url('/directory/detail/'.$id))

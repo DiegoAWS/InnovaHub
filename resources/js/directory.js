@@ -24,9 +24,9 @@ for (let j = 0; j < modalShare.length; j++) {
 
     modalItem.addEventListener("click", function(e) {
         e.stopImmediatePropagation();
-        console.log(this.className);
-        this.className = "myModalShare myModalHide";
-        console.log(this.className);
+
+        this.firstElementChild.hidden=true
+
     });
 }
 
@@ -44,25 +44,22 @@ for (let i = 0; i < cardShare.length; i++) {
         for (let j = 0; j < modalShare.length; j++) {
             let modalItem = modalShare[j];
             let modalItemId = modalItem.getAttribute("data-idShare");
-            console.log("CHILD", cardItemId, modalItemId);
+
             if (cardItemId === modalItemId) {
-                console.log(modalItem);
-                modalItem.className = "myModalShare myModalShow";
+                modalItem.firstElementChild.hidden=false
             }
         }
     });
 }
-// let shareButtonDetails = document.getElementById("shareButtonDetails");
+let shareButtonDetails = document.getElementById("shareButtonDetails");
 
-// shareButtonDetails.addEventListener("click", function(e) {
-//     console.log("CHILD", this.firstElementChild);
+shareButtonDetails.addEventListener("click", function(e) {
 
-//     if (this.firstElementChild.className.includes("myModalHide")) {
-//         console.log(this.firstElementChild.className);
-//         this.firstElementChild.className = "myModalShare myModalShow";
-//         console.log(this.firstElementChild.className);
-//     }
-// });
+    console.log("CHILD", this.firstElementChild.firstElementChild.hidden);
+if(this.firstElementChild.firstElementChild.hidden)
+this.firstElementChild.firstElementChild.hidden=false
+
+});
 
 //#region
 var dataFromServer = [
