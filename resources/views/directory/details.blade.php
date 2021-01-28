@@ -137,7 +137,7 @@
         </div>
         <div>
 
-        @include("directory.medias")
+     {{--    @include("directory.medias") --}}
         </div>
 
     </div>

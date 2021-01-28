@@ -116,18 +116,20 @@
     width: 100%;
 }
 
-#ph {
-    margin-left: 20px;
+.multi-select_placeholder {
+    left: 15px;
     font-size: 1.2rem;
     color: gray;
     font-weight: 700;
     background: white;
     position: absolute;
     transition: 0.3s ease-out;
+    padding: 0 0.3rem;
+    margin: 0 0.5rem;
+
 }
-.phRetracted {
+.multi-select_placeholder_retracted {
     color: #6200ee !important;
-    top: 0;
-    left: 0;
-    transform: translateY(-50%) translateX(-15px) scale(0.9);
+    top: 0px;
+    transform: translateY(-50%) translateX(-20px) scale(0.9);
 }

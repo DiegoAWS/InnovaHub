@@ -1,4 +1,4 @@
-import MultiSelect2 from "multi-select2";
+import MultiSelect2 from "../lib/multi-select2/multi-select2";
 
 const myData = [
     { value: "taxonomy_1", label: "Agricultura" },
@@ -58,22 +58,15 @@ let mySelect = new MultiSelect2("#multiSelect2", {
     multiple: true,
     autocomplete: true,
     icon: "fa fa-times",
-    placeholder: "Test",
+    placeholder: "Categorías",
     onChange: value => {
-        let changePh = document.getElementById("ph");
-        if (value.length === 0) {
-            changePh.classList.remove("phRetracted")
-        }
-        else changePh.classList.add("phRetracted")
+
 
         valuesSelect=value;
     }
 });
+console.log(mySelect)
 
-let ph = document.createElement("span");
-ph.id = "ph";
-ph.innerText = "Categorías";
-mySelect._select.append(ph);
 
 mySelect._firstActive = function(val) {};
 searchDirectoryButton.onclick = function() {

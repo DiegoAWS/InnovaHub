@@ -22,7 +22,6 @@
         "vue-template-compiler": "^2.6.12"
     },
     "dependencies": {
-        "multi-select2": "^1.0.2",
         "navigo": "^8.6.3",
         "shareon": "^1.6.1"
     }
