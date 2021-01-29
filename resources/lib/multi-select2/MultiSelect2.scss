@@ -18,9 +18,7 @@
     color: #aaaaaa;
 }
 
-.multi-select__autocomplete::placeholder {
-    color: red;
-}
+
 
 .multi-select__options {
     border-radius: 4px;
@@ -110,7 +108,9 @@
     border-right: none;
     border-top: none;
     box-sizing: border-box;
-    font-size: 16px;
+    font-size: 17px;
+    font-weight: 400;
+    color:black;
     outline: none;
     padding: 10px;
     width: 100%;
@@ -131,5 +131,6 @@
 .multi-select_placeholder_retracted {
     color: #6200ee !important;
     top: 0px;
+    padding-bottom: 6px;
     transform: translateY(-50%) translateX(-20px) scale(0.9);
 }

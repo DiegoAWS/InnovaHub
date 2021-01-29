@@ -3,6 +3,7 @@
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  /*Change text in autofill textbox*/
 }
 
 .material-textfield label {
@@ -22,36 +23,49 @@
 
 .material-textfield input {
   font-size: 1.7rem;
+  font-weight: 400;
+  color: black;
   outline: none;
   border: 1px solid gray;
   border-radius: 5px;
   padding: 0.5rem 0.7rem;
-  color: gray;
+  background-color: white !important;
   transition: 0.3s ease-out;
 }
 
-.material-textfield input:focus {
-  border-color: #6200EE;
+.material-textfield input:-webkit-autofill,
+.material-textfield input:-webkit-autofill:hover,
+.material-textfield input:-webkit-autofill:focus,
+.material-textfield input:-webkit-autofill:active {
+  box-shadow: 0 0 0 30px white inset !important;
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+
+.material-textfield input:-webkit-autofill {
+  -webkit-text-fill-color: black !important;
 }
 
 .material-textfield input:focus + label {
-  color: #6200EE;
+  color: #6200ee;
   top: 0;
   transform: translateY(-50%) translateX(-15px) scale(0.9);
 }
 
 .material-textfield input:not(:-moz-placeholder-shown) + label {
   top: 0;
+  color: #6200ee;
   transform: translateY(-50%) translateX(-15px) scale(0.9);
 }
 
 .material-textfield input:not(:-ms-input-placeholder) + label {
   top: 0;
+  color: #6200ee;
   transform: translateY(-50%) translateX(-15px) scale(0.9);
 }
 
 .material-textfield input:not(:placeholder-shown) + label {
   top: 0;
+  color: #6200ee;
   transform: translateY(-50%) translateX(-15px) scale(0.9);
 }
 
@@ -2599,18 +2613,6 @@ section.about-section {
   color: #aaaaaa;
 }
 
-.multi-select__autocomplete::-moz-placeholder {
-  color: red;
-}
-
-.multi-select__autocomplete:-ms-input-placeholder {
-  color: red;
-}
-
-.multi-select__autocomplete::placeholder {
-  color: red;
-}
-
 .multi-select__options {
   border-radius: 4px;
   border: 1px solid rgba(0, 0, 0, 0.15);
@@ -2699,7 +2701,9 @@ section.about-section {
   border-right: none;
   border-top: none;
   box-sizing: border-box;
-  font-size: 16px;
+  font-size: 17px;
+  font-weight: 400;
+  color: black;
   outline: none;
   padding: 10px;
   width: 100%;
@@ -2720,7 +2724,144 @@ section.about-section {
 .multi-select_placeholder_retracted {
   color: #6200ee !important;
   top: 0px;
+  padding-bottom: 6px;
   transform: translateY(-50%) translateX(-20px) scale(0.9);
+}
+
+.c-share {
+  position: relative;
+  width: 30px;
+  height: 30px;
+}
+
+.c-share__toggler:hover {
+  transform: scale(1.2) translate(-2px, 2px);
+}
+
+.c-share__input {
+  display: none;
+}
+
+.c-share__input:checked ~ .c-share__toggler:hover {
+  transform: none;
+}
+
+.c-share__input:checked ~ .c-share__toggler .c-share__icon {
+  transition: 0s;
+  width: 0;
+  height: 0;
+  color: white;
+}
+
+.c-share__input:checked ~ .c-share__toggler .c-share__icon::before {
+  transform: rotate(-45deg);
+}
+
+.c-share__input:checked ~ .c-share__toggler .c-share__icon::after {
+  transform: rotate(45deg);
+}
+
+.c-share__input:checked ~ .c-share_options {
+  width: 215px;
+  height: 42px;
+  border-radius: 0.3125em;
+}
+
+.c-share__input:checked ~ .c-share_options::before,
+.c-share__input:checked ~ .c-share_options li {
+  transition: 0.3s 0.15s;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.c-share__toggler,
+.c-share_options {
+  position: absolute;
+  right: 0;
+  width: inherit;
+  height: inherit;
+  border-radius: 50%;
+  background-color: #0064ff;
+}
+
+.c-share__toggler {
+  cursor: pointer;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.c-share__icon {
+  position: relative;
+  left: -0.3125em;
+  width: 0.5em;
+  height: 0.5em;
+  border-radius: 50%;
+  color: white;
+  background-color: currentColor;
+  box-shadow: 0.625em -0.625em, 0.625em 0.625em;
+  transition: 0.1s 0.05s;
+}
+
+.c-share__icon::before,
+.c-share__icon::after {
+  content: "";
+  position: absolute;
+  width: 1em;
+  height: 0.125em;
+  background-color: currentColor;
+  transition: 0.1s;
+}
+
+.c-share__icon::before {
+  top: 0.1875em;
+  left: 0.1875em;
+  transform-origin: bottom left;
+  transform: rotate(45deg);
+}
+
+.c-share__icon::after {
+  top: -0.125em;
+  left: 0.03125em;
+  transform-origin: center;
+  transform: rotate(-45deg);
+}
+
+.c-share_options {
+  list-style: none;
+  margin: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+  transition: 0.2s;
+  box-shadow: 0 0.125em 0.125em rgba(0, 0, 0, 0.3);
+}
+
+.c-share_options::before {
+  content: attr(data-title);
+  display: block;
+  font-weight: 700;
+}
+
+.c-share_options li {
+  font-size: 0.875em;
+  color: #464646;
+  cursor: pointer;
+}
+
+.c-share_options li:not(:last-child) {
+  margin-bottom: 0.75em;
+}
+
+.c-share_options::before,
+.c-share_options li {
+  opacity: 0;
+  transform: translateY(0.625em);
+  transition: 0s;
+}
+
+.shareon {
+  display: flex;
 }
 
 /*! shareon v1.6.1 */

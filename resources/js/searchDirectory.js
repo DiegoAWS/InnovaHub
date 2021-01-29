@@ -58,7 +58,7 @@ let mySelect = new MultiSelect2("#multiSelect2", {
     multiple: true,
     autocomplete: true,
     icon: "fa fa-times",
-    placeholder: "Categorías",
+    placeholder: "Nombre",
     onChange: value => {
         valuesSelect=value;
     }

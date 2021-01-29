@@ -27,7 +27,7 @@
 
                         <div class="col-xs-12 col-md-7">
                             <div class="inner-box">
-                                <h2>{{__('DownloadBrochures')}}</h2>
+
                                 <ul class="boucher">
                                     <li>
                                         <h5><span>Pdf</span>{{__('ResearchResults')}}<i class="icPointer fa fa-download"></i></h5>
@@ -114,61 +114,62 @@
                     </div>
                     <div class="sidebar-widget contact-widget">
                         <div class="inner-box">
-                            <h2>Agendar Cita</h2>
-                            <div class="mx-5">
-                            <div class="squareIcon cartIconButton">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="white">
-                                    <path d="M12 192h424c6.6 0 12 5.4 12 12v260c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V204c0-6.6 5.4-12 12-12zm436-44v-36c0-26.5-21.5-48-48-48h-48V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H160V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H48C21.5 64 0 85.5 0 112v36c0 6.6 5.4 12 12 12h424c6.6 0 12-5.4 12-12z" />
-                                </svg>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-
-                    <div class="sidebar-widget contact-widget">
-                        <div class="inner-box">
-                            <h2>Compartir</h2>
-
                             <div class="flex">
-                                <div class="mx-5">
-                                <?php
-                                $url = $_SERVER["REQUEST_URI"];
-                                $arrayUrl = explode("/", $url);
-                                $counter = count($arrayUrl);
-                                if ($counter > 0)
-                                    $id = $arrayUrl[$counter - 1];
-                                else
-                                    $id = -1;
-                                ?>
-                                    @php($myUrl = url('/directory/detail/'.$id))
-                                    @php($myTitle = "InnovaHub")
 
-                                    <div class="shareon" data-url={{ $myUrl }} data-title={{ $myTitle }}>
-                                        <a class="facebook"></a>
-                                        <a class="email" href="mailto:?subject={{ $myTitle }}&amp;body={{ $myUrl }}"></a>
-                                        <a class="pinterest" data-media="https://picsum.photos/500"></a>
-                                        <a class="reddit"></a>
-                                        <a class="telegram" data-text={{ $myTitle }}></a>
-                                        <a class="twitter" data-via=""></a>
-                                        <a class="mastodon" data-via=""></a>
-                                        <a class="whatsapp"></a>
+                                <div class="mx-5">
+                                    <div>
+                                        <?php
+                                        $url = $_SERVER["REQUEST_URI"];
+                                        $arrayUrl = explode("/", $url);
+                                        $counter = count($arrayUrl);
+                                        if ($counter > 0)
+                                            $id = $arrayUrl[$counter - 1];
+                                        else
+                                            $id = -1;
+                                        ?>
+                                        @php($myUrl = url('/directory/detail/'.$id))
+                                        @php($myTitle = "InnovaHub")
+                                        <div class="c-share">
+                                            <input class="c-share__input" type="checkbox" id="checkbox">
+                                            <label class="c-share__toggler" for="checkbox">
+                                                <span class="c-share__icon"></span>
+                                            </label>
+
+                                            <ul class="c-share_options" data-title="">
+                                                <div class="shareon" data-url={{ $myUrl }} data-title={{ $myTitle }}>
+                                                    <a class="facebook"></a>
+                                                    <a class="email" href="mailto:?subject={{ $myTitle }}&amp;body={{ $myUrl }}"></a>
+                                                    <a class="telegram" data-text={{ $myTitle }}></a>
+                                                    <a class="whatsapp"></a>
+                                                </div>
+                                            </ul>
+                                        </div>
+
                                     </div>
+                                </div>
+                                <div class="mx-5">
+                                    <div class="squareIcon cartIconButton">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="white">
+                                            <path d="M12 192h424c6.6 0 12 5.4 12 12v260c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V204c0-6.6 5.4-12 12-12zm436-44v-36c0-26.5-21.5-48-48-48h-48V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H160V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H48C21.5 64 0 85.5 0 112v36c0 6.6 5.4 12 12 12h424c6.6 0 12-5.4 12-12z" />
+                                        </svg>
+                                    </div>
+
 
                                 </div>
                             </div>
                         </div>
-
-
-
                     </div>
+
+
                 </aside>
             </div>
         </div>
-        <div>
-
-            {{-- @include("directory.medias") --}}
-        </div>
-
     </div>
+    <div>
+
+        {{-- @include("directory.medias") --}}
+    </div>
+
+</div>
 
 </div>
