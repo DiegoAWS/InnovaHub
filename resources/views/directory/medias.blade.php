@@ -1,41 +1,61 @@
-<!-- Carousel container -->
-<div id="my-pics" class="carousel slide" data-ride="carousel" style="width:300px;margin:auto;">
+<div class="mediaContainer">
+    <div class="mediaTitle"> Media</div>
+    <div class="galleryWrapper">
+        <div class="gallery">
 
-<!-- Indicators -->
-<ol class="carousel-indicators">
-<li data-target="#my-pics" data-slide-to="0" class="active"></li>
-<li data-target="#my-pics" data-slide-to="1"></li>
-<li data-target="#my-pics" data-slide-to="2"></li>
-</ol>
+            <div class="gallery-item">
+                <a href="https://www.youtube.com/watch?v=iGkl34KTRaU" data-lightbox="gallery" data-image-alt="Image 1">
+                    <img src="/imagesTest/icono-de-video.png" alt="Video">
+                </a>
+                <div class="textItem">Video Futuro</div>
+            </div>
+            <div class="gallery-item">
+                <a href="https://www.youtube.com/watch?v=-nP5zSwdjIk" data-lightbox="gallery" data-image-alt="Image 2">
+                    <img src="/imagesTest/icono-de-video.png" alt="Video">
+                </a>
+                <div class="textItem">Apple Watch</div>
+            </div>
 
-<!-- Content -->
-<div class="carousel-inner" role="listbox">
+            <div class="gallery-item">
+                <a href=" https://vimeo.com/435127409" data-lightbox="gallery" data-image-alt="Image 2">
+                    <img src="/imagesTest/icono-de-video.png" alt="Video">
+                </a>
+                <div class="textItem">Future City Proyects</div>
+            </div>
 
-<!-- Slide 1 -->
-<div class="item active">
-<img src="/imagesTest/Image0.jpg" alt="Sunset over beach">
-</div>
+            <div class="gallery-item">
+                <a href="/imagesTest/Image3.jpg" data-lightbox="gallery" data-image-alt="Image 2">
+                    <img src="/imagesTest/Image3.jpg" alt="Thumbnail 2">
+                </a>
+                <div class="textItem">Tecnología</div>
+            </div>
+            <div class="gallery-item">
+                <a href="/imagesTest/Image4.jpg" data-lightbox="gallery" data-image-alt="Image 2">
+                    <img src="/imagesTest/Image4.jpg" alt="Thumbnail 2">
+                </a>
+                <div class="textItem">Desarrollo</div>
+            </div>
+            <div class="gallery-item">
+                <a href="/imagesTest/Image2.jpg" data-lightbox="gallery" data-image-alt="Image 2">
+                    <img src="/imagesTest/Image2.jpg" alt="Thumbnail 2">
+                </a>
+                <div class="textItem">Drones</div>
+            </div>
 
-<!-- Slide 2 -->
-<div class="item">
-<img src="/imagesTest/Image1.jpg" alt="Rob Roy Glacier">
-</div>
+            <div class="gallery-item">
+                <a href="/imagesTest/Image1.jpg" data-lightbox="gallery" data-image-alt="Image 2">
+                    <img src="/imagesTest/Image3.jpg" alt="Thumbnail 2">
+                </a>
+                <div class="textItem">Tecnología</div>
+            </div>
+            <div class="gallery-item">
+                <a href="/imagesTest/Image0.jpg" data-lightbox="gallery" data-image-alt="Image 2">
+                    <img src="/imagesTest/Image0.jpg" alt="Thumbnail 2">
+                </a>
+                <div class="textItem">Desarrollo</div>
+            </div>
 
-<!-- Slide 3 -->
-<div class="item">
-<img src="/imagesTest/Image2.jpg" alt="Longtail boats at Phi Phi">
-</div>
+        </div>
 
-</div>
-
-<!-- Previous/Next controls -->
-<a class="left carousel-control" href="#my-pics" role="button" data-slide="prev">
-<span class="icon-prev" aria-hidden="true"></span>
-<span class="sr-only">Previous</span>
-</a>
-<a class="right carousel-control" href="#my-pics" role="button" data-slide="next">
-<span class="icon-next" aria-hidden="true"></span>
-<span class="sr-only">Next</span>
-</a>
-
+    </div>
 </div>

@@ -1,0 +1,77 @@
+@media only screen and (max-width: 768px) {
+    .mediaContainer {
+       padding: 0 !important;
+       padding-top: 10px !important;
+       width: 100% !important;
+    }
+}
+
+
+.mediaContainer {
+    border: 1px solid black;
+    position: relative;
+    width: 70vw;
+    height: 30vh;
+    margin: 40px auto;
+    padding: 20px;
+    .mediaTitle {
+        position: absolute;
+        font-size: 20px;
+        font-weight: 700;
+        color: #34c3ee;
+        background-color: white;
+        top: -15px;
+        left: 10px;
+    }
+    .galleryWrapper {
+        height: 100%;
+        width: 100%;
+        overflow-x: auto;
+        overflow-y: hidden;
+        .gallery {
+            display: flex;
+            width: max-content;
+
+            height: 100%;
+
+            .gallery-item {
+                width: 200px;
+                margin: 10px;
+                img {
+                    height: 80%;
+                    width: 100%;
+                    object-fit: cover;
+                }
+                .textItem{
+                    text-align: center;
+                    font-weight: 700;
+                }
+            }
+        }
+        .lightbox-container {
+            z-index: 1000 !important;
+
+            .lightbox-content {
+
+            }
+            .lightbox-btn-previous {
+                position: fixed;
+                left: 20px;
+                background-color: #34c3ee;
+                transition: background-color 0.3s;
+            }
+            .lightbox-btn-next {
+                position: fixed;
+                right: 20px;
+                background-color: #34c3ee;
+                transition: background-color 0.3s;
+            }
+            .lightbox-btn-close {
+                background-color: #34c3ee;
+            }
+            .lightbox-btn:hover {
+                background-color: #4c4c4c;
+            }
+        }
+    }
+}

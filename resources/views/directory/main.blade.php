@@ -90,6 +90,6 @@
         </div>
     </div>
 </div>
-<div id="detailsView">
+<div id="detailsView" class="mx-5">
     @include('directory.details')
 </div>

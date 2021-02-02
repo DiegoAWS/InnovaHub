@@ -1,4 +1,4 @@
-<div class="auto-container detailsView">
+<div id=class="auto-container detailsView">
     <a href="/directory" class="btn btn-primary detailsBackButton" data-navigo><i class="fa fa-chevron-circle-left fa-xl" aria-hidden="true"></i></a>
     <div class="clearfix">
         <div class="flex detailsSubContainer">
@@ -18,32 +18,14 @@
             <div class="col-xs-12 col-sm-6 col-md-8 ">
                 <div class="sidebar-widget brouchure-widget mt-5">
 
-                    <div class="row ">
-                        <div class="col-xs-12 col-md-4  flex align-center">
-                            <h3 class="text-muted mt-5">
-                                {{__('Documentation')}}
-                            </h3>
-                        </div>
+                    <div class="row ml-5">
 
-                        <div class="col-xs-12 col-md-7">
-                            <div class="inner-box">
-
-                                <ul class="boucher">
-                                    <li>
-                                        <h5><span>Pdf</span>{{__('ResearchResults')}}<i class="icPointer fa fa-download"></i></h5>
-                                    </li>
-                                    <li>
-                                        <h5><span>Doc</span>{{__('ServiceBrochure')}}<i class="icPointer fa fa-download"></i></h5>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
 
                         <div class="col-xs-9">
                             <table class="detailsTable">
                                 <tr>
                                     <th class="keyTable"></th>
-                                    <th class="colonTable"></th>
+
                                     <th class="valueTable"></th>
                                 </tr>
                                 <tr>
@@ -96,10 +78,10 @@
                     </div>
 
 
+
                 </div>
 
             </div>
-
             <div class="sidebar-side pull-right col-md-4 col-sm-6 col-xs-12">
                 <aside class="sidebar">
 
@@ -114,7 +96,17 @@
                     </div>
                     <div class="sidebar-widget contact-widget">
                         <div class="inner-box">
-                            <div class="flex">
+                            <div class="flex justify-between">
+
+                                <div class="mx-5">
+                                    <a href="http://enlaces-business.softok2.mx/login" title="Productos">
+                                        <div class="squareIcon cartIconButton">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="white">
+                                                <path d="M12 192h424c6.6 0 12 5.4 12 12v260c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V204c0-6.6 5.4-12 12-12zm436-44v-36c0-26.5-21.5-48-48-48h-48V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H160V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H48C21.5 64 0 85.5 0 112v36c0 6.6 5.4 12 12 12h424c6.6 0 12-5.4 12-12z" />
+                                            </svg>
+                                        </div>
+                                    </a>
+                                </div>
 
                                 <div class="mx-5">
                                     <div>
@@ -147,17 +139,13 @@
 
                                     </div>
                                 </div>
-                                <div class="mx-5">
-                                    <div class="squareIcon cartIconButton">
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="white">
-                                            <path d="M12 192h424c6.6 0 12 5.4 12 12v260c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V204c0-6.6 5.4-12 12-12zm436-44v-36c0-26.5-21.5-48-48-48h-48V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H160V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H48C21.5 64 0 85.5 0 112v36c0 6.6 5.4 12 12 12h424c6.6 0 12-5.4 12-12z" />
-                                        </svg>
-                                    </div>
 
 
-                                </div>
                             </div>
                         </div>
+
+
+
                     </div>
 
 
@@ -165,9 +153,53 @@
             </div>
         </div>
     </div>
+    <div class='twoColsContainer'>
+        <div class="colItem imageContainer">
+            <div class="docWrapper">
+                <div class="docTitle">
+                    Logo
+                </div>
+                <img alt="" id="detailsImage" class="imageLogoDetails" src="/imagesTest/logoEmpresaGenerico.jpg" />
+            </div>
+
+        </div>
+        <div class="colItem">
+            <div class="docWrapper">
+                <div class="docTitle">
+                    Documentación
+                </div>
+                <div class="docScroll">
+                    <div class="docItem">
+                        <div class="itemExtension">PDF</div>
+                        <div class="itemTitle">Resultados de la Investigación</div>
+                        <div class="itemDownload"><i class="icPointer fa fa-download"></i></div>
+                    </div>
+
+                    <div class="docItem">
+                        <div class="itemExtension">DOC</div>
+                        <div class="itemTitle">Dossier de Servicios</div>
+                        <div class="itemDownload"><i class="icPointer fa fa-download"></i></div>
+                    </div>
+                    <div class="docItem">
+                        <div class="itemExtension">PPT</div>
+                        <div class="itemTitle">Presentación Empresa</div>
+                        <div class="itemDownload"><i class="icPointer fa fa-download"></i></div>
+                    </div>
+
+                    <div class="docItem">
+                        <div class="itemExtension">RAR</div>
+                        <div class="itemTitle">Paquete de Servicios</div>
+                        <div class="itemDownload"><i class="icPointer fa fa-download"></i></div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
     <div>
 
-        {{-- @include("directory.medias") --}}
+        @include("directory.medias")
     </div>
 
 </div>

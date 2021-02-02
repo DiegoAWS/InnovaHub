@@ -110,12 +110,7 @@ section.about-section {
     }
 }
 
-.imageLogoDetails {
-    height: 100%;
-    object-fit: contain;
-    width: 90%;
-    float: right;
-}
+
 .TituloDetails {
     font-size: 2rem;
     color: black;
@@ -143,10 +138,9 @@ section.about-section {
     th.keyTable {
         width: 15%;
     }
-    th.colonTable {
-        width: 5%;
-    }
+
     .celdaTable {
+        width: 85%;
         display: flex;
         white-space: nowrap;
     }
@@ -196,4 +190,30 @@ section.about-section {
 }
 .brouchure-widget{
     padding-right: 40px;
+}
+
+
+.contact-widget .inner-box ul li i {
+color:white !important;
+}
+
+.squareContainer{
+    border: 1px solid black;
+    padding: 30px 10px;
+}
+.text-doc{
+    color: #34c3ee;
+    font-size: large;
+    font-weight: 700;
+
+    position: relative;
+    bottom: -12px;
+    left: 25px;
+    z-index: 10;
+    background: white;
+    width: fit-content;
+}
+
+.brouchure-widget {
+    padding-right: 0px !important;
 }
