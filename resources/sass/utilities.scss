@@ -9,6 +9,8 @@
 
 .flex { display:flex !important;}
 
+
+
 .justify-start   { justify-content: flex-start !important; }
 .justify-end     { justify-content: flex-end !important; }
 .justify-center  { justify-content: center !important; }
@@ -21,3 +23,16 @@
 .align-baseline { align-items: baseline !important; }
 .align-stretch  { align-items: stretch !important; }
 
+@media only screen and (min-width: 992px) {
+    .md-flex { display:flex !important;  }
+}
+
+.contain{
+    object-fit: contain !important;
+    background-size: contain !important;
+}
+
+.cover{
+    object-fit: cover !important;
+    background-size: cover !important;
+}

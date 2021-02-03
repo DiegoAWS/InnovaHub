@@ -2403,7 +2403,7 @@ section.about-section {
 .squareIcon {
   width: 30px;
   height: 30px;
-  background-color: #0064ff;
+  background-color: #34c3ee;
   border-radius: 100px;
   padding: 6px;
   padding: 5px;
@@ -2413,7 +2413,7 @@ section.about-section {
 .handShakeIcon {
   width: 30px;
   height: 30px;
-  background-color: #0064ff;
+  background-color: #34c3ee;
   border-radius: 100px;
   padding: 6px 3px;
   cursor: pointer;
@@ -2479,6 +2479,49 @@ section.about-section {
 
 .brouchure-widget {
   padding-right: 0px !important;
+}
+
+.case-single .inner-box .image {
+  height: 50%;
+}
+
+.detailsMainQuote {
+  font-size: 3rem;
+  padding: 40px;
+  line-height: 4rem;
+  text-align: justify;
+}
+
+.enterpriseTitle {
+  text-align: center;
+  font-size: 5rem;
+  font-weight: 700;
+  color: black;
+  padding: 20px;
+  margin-bottom: 20px;
+  line-height: 5rem;
+}
+
+.borderB {
+  border: 1px solid black;
+}
+
+.scrollContainer {
+  height: 100%;
+  padding: 20px;
+}
+
+.scrollInner {
+  max-height: 50vh;
+  overflow-y: auto;
+}
+
+.color-blue {
+  color: #34c3ee !important;
+}
+
+.h-30v {
+  height: 30vh;
 }
 
 .shadows {
@@ -2547,6 +2590,24 @@ section.about-section {
 
 .align-stretch {
   align-items: stretch !important;
+}
+
+@media only screen and (min-width: 992px) {
+  .md-flex {
+    display: flex !important;
+  }
+}
+
+.contain {
+  -o-object-fit: contain !important;
+     object-fit: contain !important;
+  background-size: contain !important;
+}
+
+.cover {
+  -o-object-fit: cover !important;
+     object-fit: cover !important;
+  background-size: cover !important;
 }
 
 .myCard {
@@ -2919,12 +2980,18 @@ section.about-section {
   }
 }
 
+.mediaWrapper {
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0px auto;
+}
+
 .mediaContainer {
   border: 1px solid black;
   position: relative;
-  width: 70vw;
+  width: 100%;
   height: 30vh;
-  margin: 40px auto;
   padding: 20px;
 }
 
@@ -3049,7 +3116,7 @@ section.about-section {
   width: inherit;
   height: inherit;
   border-radius: 50%;
-  background-color: #0064ff;
+  background-color: #34c3ee;
 }
 
 .c-share__toggler {
@@ -3130,6 +3197,12 @@ section.about-section {
 
 .shareon {
   display: flex;
+}
+
+.shareon .email,
+.shareon > *.telegram,
+.shareon > *.whatsapp {
+  background-color: #1877F2 !important;
 }
 
 /*! shareon v1.6.1 */
@@ -3326,7 +3399,7 @@ section.about-section {
   background-color: cyan;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: 18px;
 }
 
 .myModalShare {

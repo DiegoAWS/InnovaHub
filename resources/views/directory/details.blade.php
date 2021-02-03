@@ -9,7 +9,7 @@
                 </div>
             </div>
             <div class="w-40 smallFull p-4">
-
+            <img alt="" id="detailsImage" class="imageLogoDetails" src="/imagesTest/logoEmpresaGenerico.jpg" />
                 <img alt="" id="detailsImage" class="imageLogoDetails" />
 
             </div>
@@ -156,9 +156,7 @@
     <div class='twoColsContainer'>
         <div class="colItem imageContainer">
             <div class="docWrapper">
-                <div class="docTitle">
-                    Logo
-                </div>
+
                 <img alt="" id="detailsImage" class="imageLogoDetails" src="/imagesTest/logoEmpresaGenerico.jpg" />
             </div>
 

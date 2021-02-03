@@ -1,6 +1,6 @@
 $azure-radiance: white;
 $black: #000000;
-$concrete: #0064ff;
+$concrete: #34c3ee;
 $malibu: white;
 $tundora: #464646;
 
@@ -142,4 +142,9 @@ $tundora: #464646;
 }
 .shareon {
     display: flex;
+}
+.shareon .email ,
+.shareon > *.telegram,
+.shareon > *.whatsapp {
+    background-color:#1877F2 !important;
 }

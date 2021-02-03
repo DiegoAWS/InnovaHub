@@ -55,12 +55,10 @@ section.about-section {
     }
 }
 @media only screen and (max-width: 1215px) {
-    .detailsView{
-       padding: 0px 15px;
+    .detailsView {
+        padding: 0px 15px;
     }
-
 }
-
 
 .searchBar {
     display: flex;
@@ -110,7 +108,6 @@ section.about-section {
     }
 }
 
-
 .TituloDetails {
     font-size: 2rem;
     color: black;
@@ -145,10 +142,10 @@ section.about-section {
         white-space: nowrap;
     }
 }
-.squareIcon{
-      width: 30px;
+.squareIcon {
+    width: 30px;
     height: 30px;
-    background-color: #0064ff;
+    background-color: #34c3ee;
     border-radius: 100px;
     padding: 6px;
     padding: 5px;
@@ -157,7 +154,7 @@ section.about-section {
 .handShakeIcon {
     width: 30px;
     height: 30px;
-    background-color: #0064ff;
+    background-color: #34c3ee;
     border-radius: 100px;
     padding: 6px 3px;
     cursor: pointer;
@@ -169,7 +166,7 @@ section.about-section {
     padding: 6px 3px;
     cursor: pointer;
 }
-.icPointer{
+.icPointer {
     cursor: pointer;
 }
 .iconDetailsContainer {
@@ -183,25 +180,24 @@ section.about-section {
     font-weight: 600;
     margin-left: 20px;
 }
-.celdaTable{
+.celdaTable {
     display: flex;
     font-size: 1.5rem;
-    font-weight :bold;
+    font-weight: bold;
 }
-.brouchure-widget{
+.brouchure-widget {
     padding-right: 40px;
 }
 
-
 .contact-widget .inner-box ul li i {
-color:white !important;
+    color: white !important;
 }
 
-.squareContainer{
+.squareContainer {
     border: 1px solid black;
     padding: 30px 10px;
 }
-.text-doc{
+.text-doc {
     color: #34c3ee;
     font-size: large;
     font-weight: 700;
@@ -216,4 +212,41 @@ color:white !important;
 
 .brouchure-widget {
     padding-right: 0px !important;
+}
+
+.case-single .inner-box .image {
+    height: 50%;
+}
+
+.detailsMainQuote {
+    font-size: 3rem;
+    padding: 40px;
+    line-height: 4rem;
+    text-align: justify;
+}
+.enterpriseTitle {
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 700;
+    color: black;
+    padding: 20px;
+    margin-bottom: 20px;
+    line-height: 5rem;
+}
+.borderB {
+    border: 1px solid black;
+}
+.scrollContainer{
+    height: 100%;
+    padding: 20px;
+}
+.scrollInner{
+    max-height: 50vh;
+    overflow-y: auto;
+}
+.color-blue{
+    color:#34c3ee !important;
+}
+.h-30v{
+    height: 30vh;
 }

@@ -35,6 +35,11 @@ Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/directory', [HomeController::class, 'directory'])->name('directory');
 Route::get('/directory/detail/{name?}', [HomeController::class, 'directory'])->name('details');
 
+Route::get('/details', function () {
+    return view('details');
+});
+
+
 Route::get('/profile', [ProfileController::class, 'index'])->name('profile');
 
 // Projects routes ...

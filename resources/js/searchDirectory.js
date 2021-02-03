@@ -48,10 +48,7 @@ const myData = [
     { value: "taxonomy_45", label: "Otros" }
 ];
 
-let searchDirectoryButton = document.getElementById("searchDirectoryButton");
-
-let searchName = document.getElementById("searchName");
-let valuesSelect=[]
+let valuesSelect = [];
 let mySelect = new MultiSelect2("#multiSelect2", {
     options: myData,
     value: [],
@@ -60,14 +57,15 @@ let mySelect = new MultiSelect2("#multiSelect2", {
     icon: "fa fa-times",
     placeholder: "Categorías",
     onChange: value => {
-        valuesSelect=value;
+        valuesSelect = value;
     }
 });
 
-
-
-
-searchDirectoryButton.onclick = function() {
-    console.log("search", searchName.value);
-    console.log("Filter", valuesSelect);
-};
+let searchDirectoryButton = document.getElementById("searchDirectoryButton");
+let searchName = document.getElementById("searchName");
+if (searchDirectoryButton && searchName) {
+    searchDirectoryButton.onclick = function() {
+        console.log("search", searchName.value);
+        console.log("Filter", valuesSelect);
+    };
+}
