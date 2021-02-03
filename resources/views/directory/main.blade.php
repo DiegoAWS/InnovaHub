@@ -92,4 +92,4 @@
 </div>
 <div id="detailsView" class="mx-5 auto-container">
     @include('directory.details')
-</div>
+</div>]
