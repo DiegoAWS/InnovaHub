@@ -3453,7 +3453,7 @@ section.about-section {
 }
 
 .detailsMainQuote {
-  font-size: 3rem;
+  font-size: 2rem;
   padding-right: 20px;
   line-height: 4rem;
   text-align: justify;
@@ -3478,6 +3478,7 @@ section.about-section {
 .scrollContainer {
   height: 100%;
   padding: 20px;
+  padding-left: 0;
   padding-bottom: 0;
 }
 
@@ -3503,7 +3504,7 @@ section.about-section {
 }
 
 .auxWrapper {
-  padding: 30px 15px;
+  padding: 30px 0px 30px 15px;
   height: 100%;
 }
 

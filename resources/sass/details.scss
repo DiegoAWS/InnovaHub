@@ -105,7 +105,7 @@
 }
 
 .detailsMainQuote {
-    font-size: 3rem;
+    font-size: 2rem;
     padding-right: 20px;
     line-height: 4rem;
     text-align: justify;
@@ -128,6 +128,7 @@
 .scrollContainer{
     height: 100%;
     padding: 20px;
+    padding-left: 0;
     padding-bottom: 0;
 }
 .scrollInner{
@@ -150,6 +151,6 @@
     transform: scale(1.5);
 }
 .auxWrapper{
-    padding: 30px 15px;
+    padding: 30px 0px 30px 15px;
     height: 100%;
 }
