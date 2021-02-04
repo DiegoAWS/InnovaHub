@@ -69,9 +69,9 @@
                         <div class="h-50">
                             <div class="glider-contain h-full">
                                 <div class="glider h-full">
-                                    <img src={{ asset('imagesTest/image0.jpg') }} alt="" class="h-full contain">
-                                    <img src={{ asset('imagesTest/image1.jpg') }} alt="" class="h-full contain">
-                                    <img src={{ asset('imagesTest/image2.jpg') }} alt="" class="h-full contain">
+                                    <img src={{ asset('imagesTest/Image0.jpg') }} alt="" class="h-full contain">
+                                    <img src={{ asset('imagesTest/Image1.jpg') }} alt="" class="h-full contain">
+                                    <img src={{ asset('imagesTest/Image2.jpg') }} alt="" class="h-full contain">
 
                                 </div>
 
