@@ -6,8 +6,8 @@ $tundora: #464646;
 
 .c-share {
     position: relative;
-    width: 30px;
-    height: 30px;
+    width: 19px;
+    height: 19px;
 }
 .c-share__toggler:hover {
     transform: scale(1.2) translate(-2px, 2px);
@@ -73,6 +73,7 @@ $tundora: #464646;
 }
 
 .c-share__icon {
+    transform: scale(0.75);
     position: relative;
     left: -0.3125em;
     width: 0.5em;
@@ -147,4 +148,14 @@ $tundora: #464646;
 .shareon > *.telegram,
 .shareon > *.whatsapp {
     background-color:#1877F2 !important;
+}
+.shareon {
+    .email {
+        width: 0px;
+        background-image: url("/imagesTest/iconEmail.png");
+        background-color: cyan;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 18px;
+    }
 }

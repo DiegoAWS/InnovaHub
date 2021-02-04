@@ -1,89 +1,40 @@
 import Navigo from "navigo";
 import shareon from "shareon";
-
+import Glider from "../lib/glider/glider"
 shareon();
 
-let userSelection = document.getElementsByClassName("imgCard");
 
-for (let i = 0; i < userSelection.length; i++) {
-    (function(index) {
-        userSelection[index].addEventListener("click", function() {
-            let cardItemId = userSelection[index].id;
-            router.navigate("/directory/detail/" + cardItemId);
-        });
-    })(i);
-}
-
-//cardShare
-let cardShare = document.getElementsByClassName("cardShare");
-let modalShare = document.getElementsByClassName("myModalShare");
-let modalContent = document.getElementsByClassName("myModalContent");
-
-for (let j = 0; j < modalShare.length; j++) {
-    let modalItem = modalShare[j];
-
-    modalItem.addEventListener("click", function(e) {
-        e.stopImmediatePropagation();
-
-        this.firstElementChild.hidden=true
-
-    });
-}
-
-for (let j = 0; j < modalContent.length; j++) {
-    modalContent[j].addEventListener("click", function(e) {
-        e.stopPropagation();
-    });
-}
-//Agregando MOSTRAR MODAL SHARE en las CARD
-for (let i = 0; i < cardShare.length; i++) {
-    cardShare[i].addEventListener("click", function(e) {
-        e.stopImmediatePropagation();
-        let cardItemId = this.getAttribute("data-idCard");
-
-        for (let j = 0; j < modalShare.length; j++) {
-            let modalItem = modalShare[j];
-            let modalItemId = modalItem.getAttribute("data-idShare");
-
-            if (cardItemId === modalItemId) {
-                modalItem.firstElementChild.hidden=false
-            }
-        }
-    });
-}
-
-
-//#region
+//#region fake Data
 var dataFromServer = [
     {
-        title: "HARDVARD University",
+        title: "HARVARD University",
         image: "/imagesTest/Image0.jpg",
         description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea aperiam assumenda, quae error soluta odio consequatur, incidunt ducimus molestiae sed eveniet. Rerum, modi aliquid ipsum ea recusandae itaque voluptatum libero minima sit iusto asperiores facere eaque, dicta quam vel maiores, provident sunt unde iste blanditiis sint commodi in doloribus illo! Sit temporibus laudantium pariatur ipsa excepturi molestias inventore veritatis similique maxime! Numquam ipsam repellendus at optio expedita reiciendis laborum non ad aut, odit similique explicabo! Eum commodi repellat ducimus labore quisquam ad dolorum vero eius quas animi veniam, quod voluptate, impedit temporibus possimus quidem qui officia ea nesciunt, neque fugit?"
+            "Steve Wozniak y Steve Jobs se conocieron en 1971, cuando un amigo mutuo, Bill Fernández, presentó a Wozniak, quien tenía 21 años de edad, a Jobs, entonces de 15 años. Steve Wozniak, a quien le gustaba que le llamaran Woz, siempre había sentido una gran atracción por la electrónica en general, diseñando desde que era pequeño circuitos en papel para después tratar de optimizarlos al máximo. Dada su afición por la electrónica, Woz  a otros chicos a los que les gustase el tema, como Bill Fernández o el mismo Steve Jobs."
     },
     {
         title: "Combinado cárnico",
         image: "/imagesTest/Image1.jpg",
         description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea aperiam assumenda, quae error soluta odio consequatur, incidunt ducimus molestiae sed eveniet. Rerum, modi aliquid ipsum ea recusandae itaque voluptatum libero minima sit iusto asperiores facere eaque, dicta quam vel maiores, provident sunt unde iste blanditiis sint commodi in doloribus illo! Sit temporibus laudantium pariatur ipsa excepturi molestias inventore veritatis similique maxime! Numquam ipsam repellendus at optio expedita reiciendis laborum non ad aut, odit similique explicabo! Eum commodi repellat ducimus labore quisquam ad dolorum vero eius quas animi veniam, quod voluptate, impedit temporibus possimus quidem qui officia ea nesciunt, neque fugit?"
+            "Pronto Wozniak empezó a dedicar cada vez más y más tiempo a construir en papel su propia computadora. Tras intentos relativamente infructuosos en su oficina de trabajo en Hewlett-Packard (sus jefes vieron el proyecto y no estaban interesados y le autorizaron a continuarlo),8​ finalmente sus esfuerzos dieron como resultado lo que sería la Apple I. Tras la presentación de su computadora en el club informático Homebrew Computer Club y asombrar a sus participantes,9​ Jobs rápidamente vio la oportunidad de negocio, por lo que empezó a promover la computadora entre otros aficionados de la informática del Homebrew Computer Club y otras tiendas de electrónica digital."
     },
     {
         title: "Poder popular Centro Habana y Havana Vieja",
         image: "/imagesTest/Image2.jpg",
         description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea aperiam assumenda, quae error soluta odio consequatur, incidunt ducimus molestiae sed eveniet. Rerum, modi aliquid ipsum ea recusandae itaque voluptatum libero minima sit iusto asperiores facere eaque, dicta quam vel maiores, provident sunt unde iste blanditiis sint commodi in doloribus illo! Sit temporibus laudantium pariatur ipsa excepturi molestias inventore veritatis similique maxime! Numquam ipsam repellendus at optio expedita reiciendis laborum non ad aut, odit similique explicabo! Eum commodi repellat ducimus labore quisquam ad dolorum vero eius quas animi veniam, quod voluptate, impedit temporibus possimus quidem qui officia ea nesciunt, neque fugit?"
+            "Doce días después de la fundación Wayne vende sus acciones por US$ 800 y pasado el tiempo el contrato original que él mismo firmó por US$ 500.13​ Dicho contrato luego se subastó el 13 de diciembre de 2011 en Nueva York, el cual tuvo como base un valor inicial de entre 100 y 150 mil dólares,14​ pero que alcanzó finalmente un valor venta de 1,59 millones de dólares.15​ Se les unieron más amigos, pero las prestaciones del Apple I eran limitadas, así que empezaron a buscar financiación. Finalmente, Jobs conoció a Mike Markkula, que accedió a invertir 250 000 USD."
     },
     {
         title: "CITMATEL",
         image: "/imagesTest/Image3.jpg",
         description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea aperiam assumenda, quae error soluta odio consequatur, incidunt ducimus molestiae sed eveniet. Rerum, modi aliquid ipsum ea recusandae itaque voluptatum libero minima sit iusto asperiores facere eaque, dicta quam vel maiores, provident sunt unde iste blanditiis sint commodi in doloribus illo! Sit temporibus laudantium pariatur ipsa excepturi molestias inventore veritatis similique maxime! Numquam ipsam repellendus at optio expedita reiciendis laborum non ad aut, odit similique explicabo! Eum commodi repellat ducimus labore quisquam ad dolorum vero eius quas animi veniam, quod voluptate, impedit temporibus possimus quidem qui officia ea nesciunt, neque fugit?"
+            "Con el dinero ganado gracias a la venta del Apple I, en Apple pudo comenzar a pensar en una máquina bastante más ambiciosa: el Apple II. Para Wozniak, el Apple II iba a ser simplemente la computadora que hubiera querido construir si no hubiera tenido las limitaciones económicas que tuvo con el Apple I. Tuvo la idea de incluir en el equipo memoria de vídeo para administrar la visualización en color, del mismo modo que incluía numerosas tarjetas de expansión de modo que los usuarios pudieran ampliar las capacidades de la computadora según sus propias necesidades."
     },
     {
         title: "Apple Corp. Inc International",
         image: "/imagesTest/Image4.jpg",
         description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea aperiam assumenda, quae error soluta odio consequatur, incidunt ducimus molestiae sed eveniet. Rerum, modi aliquid ipsum ea recusandae itaque voluptatum libero minima sit iusto asperiores facere eaque, dicta quam vel maiores, provident sunt unde iste blanditiis sint commodi in doloribus illo! Sit temporibus laudantium pariatur ipsa excepturi molestias inventore veritatis similique maxime! Numquam ipsam repellendus at optio expedita reiciendis laborum non ad aut, odit similique explicabo! Eum commodi repellat ducimus labore quisquam ad dolorum vero eius quas animi veniam, quod voluptate, impedit temporibus possimus quidem qui officia ea nesciunt, neque fugit?"
+            "Con el diseño del primer prototipo del Apple II recién terminado, Apple decidió asistir al festival informático Personal Computing Festival, un nuevo certamen. Allí, la incipiente industria de la microinformática podía mostrar sus progresos y hacer negocio y contactos. En el vuelo a Filadelfia, lugar donde se celebrara en 1976, los fundadores de Apple coincidieron en el avión con los fundadores de Processor Technology y su recién diseñada computadora Sol, coincidencia que tuvo un gran impacto en el futuro inmediato de Apple."
     }
 ];
 //#endregion
@@ -91,9 +42,17 @@ var dataFromServer = [
 const directoryContainer = document.getElementById("directoryContainer");
 const detailsView = document.getElementById("detailsView");
 
-const detailsTitle = document.getElementById("detailsTitle");
-const detailsDescription = document.getElementById("detailsDescription");
-const detailsImage = document.getElementById("detailsImage");
+const detailTitles = document.getElementsByClassName("TitleDetails");
+const detailDescription = document.getElementById("detailDescription");
+
+const elGlider=document.querySelector('.glider')
+const myGlider=new Glider(elGlider, {
+    slidesToShow: 1,
+    dots: '.dots',
+
+    rewind:true
+  });
+
 
 const router = new Navigo("/");
 
@@ -109,9 +68,13 @@ router.on("/directory/detail/:id", ({ data }) => {
     let id = data && data.id ? data.id : 0;
 
     let info = dataFromServer[id % 5];
-    detailsTitle.innerText = info.title;
-    detailsDescription.innerText = info.description;
-    detailsImage.src = info.image;
+
+    for (let titleItem of detailTitles) {
+        titleItem.innerText = info.title;
+    }
+    detailDescription.innerText = info.description;
+
+    // detailsImage.src = info.image;
 
     directoryContainer.style.display = "none";
     detailsView.style.display = "block";

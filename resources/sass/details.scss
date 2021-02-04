@@ -38,6 +38,7 @@
     height: 100%;
     width: 100%;
     padding: 12px 0px;
+    border: 1px solid black;
     .docTitle {
         position: absolute;
         top: -25px;
@@ -93,4 +94,62 @@
             }
         }
     }
+}
+
+
+//New Details Page
+
+
+.case-single .inner-box .image {
+    height: 50%;
+}
+
+.detailsMainQuote {
+    font-size: 3rem;
+    padding-right: 20px;
+    line-height: 4rem;
+    text-align: justify;
+}
+.enterpriseTitle {
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 700;
+    color: black;
+    padding: 20px;
+    margin-bottom: 20px;
+    line-height: 5rem;
+}
+.borderB {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.scrollContainer{
+    height: 100%;
+    padding: 20px;
+    padding-bottom: 0;
+}
+.scrollInner{
+    max-height: 20rem;
+    overflow-y: auto;
+}
+.color-blue{
+    color:#34c3ee !important;
+}
+.h-30v{
+    height: 30vh;
+
+}
+.max-h-40v{
+  height: max(40vh,350px);
+
+
+}
+.scale15{
+    transform: scale(1.5);
+}
+.auxWrapper{
+    padding: 30px 15px;
+    height: 100%;
 }

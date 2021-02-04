@@ -59,7 +59,9 @@ section.about-section {
         padding: 0px 15px;
     }
 }
-
+.detailsView {
+    display: none;
+}
 .searchBar {
     display: flex;
     padding-left: 20px;
@@ -212,41 +214,4 @@ section.about-section {
 
 .brouchure-widget {
     padding-right: 0px !important;
-}
-
-.case-single .inner-box .image {
-    height: 50%;
-}
-
-.detailsMainQuote {
-    font-size: 3rem;
-    padding: 40px;
-    line-height: 4rem;
-    text-align: justify;
-}
-.enterpriseTitle {
-    text-align: center;
-    font-size: 5rem;
-    font-weight: 700;
-    color: black;
-    padding: 20px;
-    margin-bottom: 20px;
-    line-height: 5rem;
-}
-.borderB {
-    border: 1px solid black;
-}
-.scrollContainer{
-    height: 100%;
-    padding: 20px;
-}
-.scrollInner{
-    max-height: 50vh;
-    overflow-y: auto;
-}
-.color-blue{
-    color:#34c3ee !important;
-}
-.h-30v{
-    height: 30vh;
 }

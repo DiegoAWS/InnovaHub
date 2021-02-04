@@ -48,14 +48,14 @@ font-family: 'Montserrat', sans-serif;*/
 @import url('bootstrap-select.min.css');
 
 
-/*** 
+/***
 
 ====================================================================
 	Reset
 ====================================================================
 
  ***/
- 
+
 * {
 	margin:0px;
 	padding:0px;
@@ -63,7 +63,7 @@ font-family: 'Montserrat', sans-serif;*/
 	outline:none;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Global Settings
@@ -110,7 +110,7 @@ input,button,select,textarea{
 
 p{
 	position:relative;
-	line-height:1.8em;	
+	line-height:1.8em;
 }
 
 .text {
@@ -120,7 +120,7 @@ p{
 }
 
 .strike-through{
-	text-decoration:line-through;	
+	text-decoration:line-through;
 }
 
 .auto-container{
@@ -146,7 +146,7 @@ p{
 ul,li{
 	list-style:none;
 	padding:0px;
-	margin:0px;	
+	margin:0px;
 }
 
 .theme-btn,
@@ -173,7 +173,7 @@ ul,li{
 }
 
 .centered {
-	text-align:center;	
+	text-align:center;
 }
 
 .no-padd {
@@ -565,7 +565,7 @@ ul,li{
   margin-bottom: 10px;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Section Title
@@ -968,7 +968,7 @@ ul,li{
 }
 
 
-/*** 
+/***
 
 ====================================================================
 	List Style One
@@ -1007,7 +1007,7 @@ ul,li{
 	font-family: 'FontAwesome';
 }
 
-/*** 
+/***
 
 ====================================================================
 	List Style Two
@@ -1038,7 +1038,7 @@ ul,li{
 	font-family: 'FontAwesome';
 }
 
-/*** 
+/***
 
 ====================================================================
 	List Style Three
@@ -1069,7 +1069,7 @@ ul,li{
 	font-family: 'FontAwesome';
 }
 
-/*** 
+/***
 
 ====================================================================
 	List Style Four
@@ -1097,7 +1097,7 @@ ul,li{
 	font-size:14px;
 }
 
-/*** 
+/***
 
 ====================================================================
 	List Style Five
@@ -1140,7 +1140,7 @@ ul,li{
 }
 
 .theme_color{
-	color:#34c3ed !important;	
+	color:#34c3ed !important;
 }
 
 /*Social Icon One*/
@@ -1163,7 +1163,7 @@ ul,li{
 	-ms-transition:all 300ms ease;
 	-o-transition:all 300ms ease;
 	-moz-transition:all 300ms ease;
-	transition:all 300ms ease;	
+	transition:all 300ms ease;
 }
 
 .social-icon-one a:hover{
@@ -1190,7 +1190,7 @@ ul,li{
 	-ms-transition:all 300ms ease;
 	-o-transition:all 300ms ease;
 	-moz-transition:all 300ms ease;
-	transition:all 300ms ease;	
+	transition:all 300ms ease;
 }
 
 .social-icon-two li a:hover{
@@ -1236,7 +1236,7 @@ ul,li{
 	-ms-transition:all 300ms ease;
 	-o-transition:all 300ms ease;
 	-moz-transition:all 300ms ease;
-	transition:all 300ms ease;	
+	transition:all 300ms ease;
 }
 
 .social-icon-three li a:hover{
@@ -1316,15 +1316,15 @@ ul,li{
 .owl-nav-style-one .carousel-outer:hover .owl-nav .owl-next,
 .owl-nav-style-one .carousel-outer:hover .owl-nav .owl-prev{
 	opacity:1;
-	visibility:visible;	
+	visibility:visible;
 }
 
 .owl-nav-style-one .owl-nav .owl-prev{
-	left:0px;	
+	left:0px;
 }
 
 .owl-nav-style-one .owl-nav .owl-next{
-	right:0px;	
+	right:0px;
 }
 
 .owl-nav-style-one .owl-nav .owl-next:hover,
@@ -1337,12 +1337,12 @@ ul,li{
 
 img{
 	display:inline-block;
-	max-width:100%;	
+	max-width:100%;
 }
 
 .preloader{ position:fixed; left:0px; top:0px; width:100%; height:100%; z-index:999999; background-color:#ffffff; background-position:center center; background-repeat:no-repeat; background-image:url(../images/icons/preloader.GIF);}
 
-/*** 
+/***
 
 ====================================================================
 	Scroll To Top style
@@ -1370,7 +1370,7 @@ img{
 	-ms-transition:all 300ms ease;
 	-o-transition:all 300ms ease;
 	-moz-transition:all 300ms ease;
-	transition:all 300ms ease;		
+	transition:all 300ms ease;
 }
 
 .scroll-to-top:hover{
@@ -1378,7 +1378,7 @@ img{
 	background:#34c3ed;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Main Header style
@@ -1450,7 +1450,7 @@ img{
 	-moz-animation-iteration-count: 1;
 	-op-animation-iteration-count: 1;
 	-webkit-animation-iteration-count: 1;
-	animation-iteration-count: 1;	
+	animation-iteration-count: 1;
 }
 
 .main-header .header-top{
@@ -1595,13 +1595,13 @@ img{
 	display:inline-block;
 	margin-left:18px;
 	line-height:30px;
-	color:#b9b9b9;	
+	color:#b9b9b9;
 }
 
 .main-header .header-bottom .top-right{
 	position:relative;
 	float:right;
-	padding:0px;	
+	padding:0px;
 }
 
 .main-header .header-bottom .top-right ul > li{
@@ -1631,7 +1631,7 @@ img{
 
 .main-header .language .dropdown-menu{
 	top:100%;
-	width:170px;	
+	width:170px;
 	border-radius:0px;
 	padding:0px;
 	margin-top:10px;
@@ -1672,7 +1672,7 @@ img{
 }
 
 .main-header .language .dropdown-menu > li:last-child{
-	border-bottom:none;	
+	border-bottom:none;
 }
 
 .main-header .language .dropdown-menu > li > a{
@@ -1765,18 +1765,18 @@ img{
 .main-header .nav-outer .dropdown-outer .dropdown-menu{
 	top:75px;
 	padding:0px;
-	width:250px;	
+	width:250px;
 	border-radius:0px;
 	border-top:2px solid #34c3ed;
 }
 
 .main-header .search-panel .form-container{
-	padding:20px 20px;	
+	padding:20px 20px;
 }
 
 .main-header .search-panel .form-group{
 	position:relative;
-	margin:0px;	
+	margin:0px;
 }
 
 .main-header .search-panel input[type="text"],
@@ -1798,7 +1798,7 @@ img{
 
 .main-header .search-panel input[type="text"]:focus,
 .main-header .search-panel input[type="search"]:focus{
-	border-color:#34c3ed;	
+	border-color:#34c3ed;
 }
 
 .main-header .search-panel .search-btn{
@@ -1815,11 +1815,11 @@ img{
 }
 
 .main-menu{
-	position:relative;	
+	position:relative;
 }
 
 .main-menu .navbar-collapse{
-	padding:0px;	
+	padding:0px;
 }
 
 .main-menu .navigation{
@@ -1839,7 +1839,7 @@ img{
 
 .sticky-header .main-menu .navigation > li{
 	padding:0px;
-	margin-right:0px;	
+	margin-right:0px;
 }
 
 .main-menu .navigation > li > a{
@@ -1925,7 +1925,7 @@ img{
 
 .main-menu .navigation > li > ul.from-right{
 	left:auto;
-	right:0px;	
+	right:0px;
 }
 
 .main-menu .navigation > li > ul > li{
@@ -1934,11 +1934,11 @@ img{
 }
 
 .main-menu .navigation > li > ul > li:last-child{
-	border-bottom:none;	
+	border-bottom:none;
 }
 
 .main-menu .navigation > li > ul > li:last-child > a{
-	border-bottom:none;	
+	border-bottom:none;
 }
 
 .main-menu .navigation > li > ul > li > a{
@@ -1978,7 +1978,7 @@ img{
 	font-size:16px;
 	font-weight:normal;
 	text-align:center;
-	z-index:5;	
+	z-index:5;
 }
 
 .main-menu .navigation > li > ul > li.dropdown:hover > a:after{
@@ -2007,7 +2007,7 @@ img{
 }
 
 .main-menu .navigation > li > ul > li > ul > li:last-child{
-	border-bottom:none;	
+	border-bottom:none;
 }
 
 .main-menu .navigation > li > ul > li  > ul > li > a{
@@ -2035,7 +2035,7 @@ img{
 .main-menu .navigation > li.dropdown:hover > ul{
 	visibility:visible;
 	opacity:1;
-	top:100%;	
+	top:100%;
 }
 
 .main-menu .navigation li > ul > li.dropdown:hover > ul{
@@ -2046,7 +2046,7 @@ img{
 	-moz-transition:all 500ms ease;
 	-webkit-transition:all 500ms ease;
 	-ms-transition:all 500ms ease;
-	-o-transition:all 500ms ease;	
+	-o-transition:all 500ms ease;
 }
 
 .main-menu .navigation li.dropdown .dropdown-btn{
@@ -2415,7 +2415,7 @@ img{
 }
 
 .header-style-four .nav-outer .more-options .location-dropdown .dropdown-menu > li:last-child{
-	border-bottom:none;	
+	border-bottom:none;
 }
 
 .header-style-four .nav-outer .more-options .location-dropdown .dropdown-menu > li > a{
@@ -2561,7 +2561,7 @@ img{
 	display: none;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Main Slider One
@@ -2576,11 +2576,11 @@ img{
 }
 
 .main-slider .color-grey{
-	color:#222222 !important;	
+	color:#222222 !important;
 }
 
 .main-slider .tp-caption{
-	z-index:5;	
+	z-index:5;
 }
 
 .main-slider .tp-caption .theme-btn{
@@ -2672,12 +2672,12 @@ img{
 }
 
 .main-slider .tp-dottedoverlay{
-	background:rgba(0,0,0,0.10) !important;	
+	background:rgba(0,0,0,0.10) !important;
 }
 
 .main-slider .tp-bannertimer,
 .main-slider .tp-bullets{
-	display:none !important;	
+	display:none !important;
 }
 
 .main-slider .uranus.tparrows{
@@ -2707,7 +2707,7 @@ img{
 	opacity:1;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Fancy Box
@@ -2756,7 +2756,7 @@ img{
 .fancybox-next:hover span:before,
 .fancybox-prev:hover span:before{
 	background-color:#ffffff !important;
-	color:#000000;	
+	color:#000000;
 }
 
 .fancybox-type-image .fancybox-close{
@@ -2765,18 +2765,18 @@ img{
 	width:45px;
 	height:45px;
 	background:url(../images/icons/icon-cross.png) center center no-repeat;
-	background-color:rgba(17,17,17,0.50) !important;	
+	background-color:rgba(17,17,17,0.50) !important;
 }
 
 .fancybox-type-image .fancybox-close:hover{
-	background-color:#000000 !important;	
+	background-color:#000000 !important;
 }
 
 .fancybox-type-image .fancybox-skin{
-	padding:0px !important;	
+	padding:0px !important;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Services Section h
@@ -2812,10 +2812,10 @@ img{
 }
 
 
-/*** 
+/***
 
 ====================================================================
-	Services Section 
+	Services Section
 ====================================================================
 
 ***/
@@ -2839,7 +2839,7 @@ img{
 
 
 
-/*** 
+/***
 
 ====================================================================
 	About Section h_2
@@ -2879,7 +2879,7 @@ img{
 }
 
 .about-section .author-information {
-	position: relative;	
+	position: relative;
 	display: inline-block;
 	margin-bottom: 30px;
 }
@@ -2943,7 +2943,7 @@ img{
 	color: #fff;
 }
 
-/*** 
+/***
 
 ====================================================================
 	whychoose-us Section h_3
@@ -2973,7 +2973,7 @@ img{
 
 
 
-/*** 
+/***
 
 ====================================================================
 	services-block
@@ -3235,7 +3235,7 @@ img{
 	-ms-transition:all 300ms ease;
 	-o-transition:all 300ms ease;
 	-moz-transition:all 300ms ease;
-	transition:all 300ms ease;	
+	transition:all 300ms ease;
 }
 
 .services-block-three .inner-box .overlay-box:after{
@@ -4109,7 +4109,7 @@ img{
     overflow: hidden;
 }
 .services-block-eleven .img-holder{
-    position: relative;    
+    position: relative;
     overflow: hidden;
 }
 .services-block-eleven .img-holder .content {
@@ -4250,7 +4250,7 @@ img{
 }
 
 
-/*** 
+/***
 
 ====================================================================
 	Clients Section h_8
@@ -4332,7 +4332,7 @@ img{
 }
 
 
-/*** 
+/***
 
 ====================================================================
 	Featured Section Two
@@ -4410,7 +4410,7 @@ img{
 	background-color:#34c3ed;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Counter Section
@@ -4486,7 +4486,7 @@ img{
 	color: #34c3ed;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Call To Section
@@ -4532,7 +4532,7 @@ img{
 	transition: .5s ease;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Call To Section two
@@ -4572,7 +4572,7 @@ img{
 	width: 5000000%;
 }
 
-/*** 
+/***
 
 ====================================================================
 	News Section h_7
@@ -4694,7 +4694,7 @@ img{
 	line-height:1.8em;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Testimonial Section
@@ -4774,7 +4774,7 @@ img{
 }
 
 .testimonial-section .owl-nav{
-	display:none;	
+	display:none;
 }
 
 .testimonial-section .owl-dots{
@@ -4786,7 +4786,7 @@ img{
 .testimonial-section .owl-dots .owl-dot{
 	position:relative;
 	display:inline-block;
-	margin:0px 13px;	
+	margin:0px 13px;
 }
 
 .testimonial-section .owl-dots .owl-dot span{
@@ -4808,7 +4808,7 @@ img{
 	background:#34c3ed;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Info Section h_9
@@ -4878,7 +4878,7 @@ img{
 	border-color: rgba(244, 244, 244, 0.07);
 }
 
-/*** 
+/***
 
 ====================================================================
 	Main Footer 0
@@ -5022,7 +5022,7 @@ img{
 	-ms-transition:all 300ms ease;
 	-o-transition:all 300ms ease;
 	-moz-transition:all 300ms ease;
-	transition:all 300ms ease;	
+	transition:all 300ms ease;
 }
 
 .main-footer .newsletter-form .form-group textarea{
@@ -5037,7 +5037,7 @@ img{
 	-ms-transition:all 300ms ease;
 	-o-transition:all 300ms ease;
 	-moz-transition:all 300ms ease;
-	transition:all 300ms ease;	
+	transition:all 300ms ease;
 }
 
 .main-footer .newsletter-form .form-group input::-webkit-input-placeholder,
@@ -5093,7 +5093,7 @@ img{
 .main-footer .posts-widget .post:last-child{
   border-bottom:none;
   padding-bottom:0px;
-  margin-bottom:0px;  
+  margin-bottom:0px;
 }
 
 .main-footer .posts-widget .post .content{
@@ -5114,7 +5114,7 @@ img{
 
 .main-footer .posts-widget .post .content .post-thumb img{
   display:block;
-  width:100%; 
+  width:100%;
 }
 
 .main-footer .posts-widget .post h4{
@@ -5137,12 +5137,12 @@ img{
 }
 
 .main-footer .posts-widget .post .time .fa{
-  padding-right:8px;  
+  padding-right:8px;
 }
 
 /* Contact information */
 .main-footer .contact-info{
-  margin-bottom:30px; 
+  margin-bottom:30px;
 }
 
 .main-footer .contact-info li{
@@ -5210,7 +5210,7 @@ img{
 	font-weight:300;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Welcome Section h_4
@@ -5225,7 +5225,7 @@ img{
 
 
 
-/*** 
+/***
 
 ====================================================================
 	Services Section
@@ -5319,7 +5319,7 @@ img{
 	margin-bottom:80px;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Faq Section
@@ -5382,7 +5382,7 @@ img{
 	text-align:left;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Accordion Style
@@ -5482,7 +5482,7 @@ img{
 }
 
 .accordion-box .block .acc-content.current{
-	display:block;	
+	display:block;
 }
 
 .accordion-box .block .content{
@@ -5494,13 +5494,13 @@ img{
 .accordion-box .block .content p{
 	margin-bottom:20px;
 	line-height:1.8em;
-	font-size:16px;	
+	font-size:16px;
 	color:#848484;
 	font-weight:300;
 }
 
 .accordion-box .block .content p:last-child{
-	margin-bottom:0px;	
+	margin-bottom:0px;
 }
 
 /*Accordian Style Two*/
@@ -5648,7 +5648,7 @@ img{
 	padding:25px 40px;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Project Section
@@ -5662,7 +5662,7 @@ img{
 }
 
 .project-tab{
-	position:relative;	
+	position:relative;
 }
 
 .project-tab .project-carousel .owl-nav,
@@ -5715,7 +5715,7 @@ img{
 
 .project-tab .p-tabs-content{
 	position:relative;
-	display:block;	
+	display:block;
 }
 
 .project-tab .p-tab{
@@ -5725,7 +5725,7 @@ img{
 	width:100%;
 	height:auto;
 	background:#ffffff;
-	visibility:hidden;	
+	visibility:hidden;
 }
 
 .project-tab .p-tab.active-tab{
@@ -5770,7 +5770,7 @@ img{
 
 .gallery-item .image-box{
 	position:relative;
-	display:block;	
+	display:block;
 }
 
 .gallery-item .image-box img{
@@ -5855,7 +5855,7 @@ img{
 	position:relative;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Testimonial Section
@@ -6078,7 +6078,7 @@ img{
 
 
 
-/*** 
+/***
 
 ====================================================================
 	Subscribe Section
@@ -6134,12 +6134,12 @@ img{
 	-ms-transition:all 300ms ease;
 	-o-transition:all 300ms ease;
 	-moz-transition:all 300ms ease;
-	transition:all 300ms ease;	
+	transition:all 300ms ease;
 }
 
 .subscribe-form .form-group input[type="text"]:focus,
 .subscribe-form .form-group input[type="email"]:focus{
-	border-color:#34c3ed;	
+	border-color:#34c3ed;
 }
 
 .subscribe-form .form-group input[type="submit"],
@@ -6150,7 +6150,7 @@ img{
 	text-transform:uppercase;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Choose Section
@@ -6167,7 +6167,7 @@ img{
 	margin-top:10px;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Project Section Two h_5
@@ -6201,13 +6201,13 @@ img{
 	margin-bottom: 50px;
 }
 
-.gallery-section.style-two .gallery-filters li:hover, 
+.gallery-section.style-two .gallery-filters li:hover,
 .gallery-section.style-two .gallery-filters li.active {
     color: #34c3ed;
     border-color: rgba(244, 244, 244, 0.07);
 }
 
-.gallery-section.style-three .gallery-filters li:hover, 
+.gallery-section.style-three .gallery-filters li:hover,
 .gallery-section.style-three .gallery-filters li.active {
     color: #34c3ed;
     border-color: #f4f4f4;
@@ -6269,7 +6269,7 @@ img{
 	-moz-transition:all 0.3s ease;
 	-webkit-transition:all 0.3s ease;
 	-ms-transition:all 0.3s ease;
-	-o-transition:all 0.3s ease;	
+	-o-transition:all 0.3s ease;
 }
 
 .project-block-one .inner-box:hover .image-box .overlay-box{
@@ -6278,7 +6278,7 @@ img{
 
 .project-block-one .image-box{
 	position:relative;
-	display:block;	
+	display:block;
 }
 
 .project-block-one .image-box img{
@@ -6337,7 +6337,7 @@ img{
 }
 
 .project-block-one .inner-box:hover .lower-content h3 a{
-	color:#34c3ed;	
+	color:#34c3ed;
 }
 
 .gallery-section.style-two .project-block-one .inner-box:hover .lower-content h3 a {
@@ -6367,7 +6367,7 @@ img{
 }
 
 .team-section .owl-nav{
-	display:none;	
+	display:none;
 }
 
 .team-section .owl-dots{
@@ -6379,7 +6379,7 @@ img{
 .team-section .owl-dots .owl-dot{
 	position:relative;
 	display:inline-block;
-	margin:0px 13px;	
+	margin:0px 13px;
 }
 
 .team-section .owl-dots .owl-dot span{
@@ -6401,7 +6401,7 @@ img{
 	background:#34c3ed;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Project Section four h_6
@@ -6458,7 +6458,7 @@ img{
 
 .testimonial-block-six .inner-box {
     position: relative;
-    
+
 }
 
 .testimonial-block-six .inner-box .text-box {
@@ -6485,9 +6485,9 @@ img{
 }
 
 .testimonial-block-six .inner-box .bottom .client-info .client-photo{
-    width: 75px; 
+    width: 75px;
     border-radius: 50%;
-    overflow: hidden;   
+    overflow: hidden;
 }
 
 .testimonial-block-six .inner-box .bottom .client-info .client-photo,
@@ -6854,9 +6854,9 @@ img{
 }
 
 .testimonial-block-ten .inner-box .bottom .client-info .client-photo{
-    width: 75px; 
+    width: 75px;
     border-radius: 50%;
-    overflow: hidden;   
+    overflow: hidden;
 }
 
 .testimonial-block-ten .inner-box .bottom .client-info .client-photo,
@@ -6894,7 +6894,7 @@ img{
 }
 
 
-/*** 
+/***
 
 ====================================================================
 	Sevices Section
@@ -6945,7 +6945,7 @@ img{
 }
 
 
-/*** 
+/***
 
 ====================================================================
 	Feedback Section
@@ -7061,7 +7061,7 @@ img{
 
 .feedback-section .owl-nav{
 	margin:0px;
-	padding:0px;	
+	padding:0px;
 }
 
 .feedback-section .owl-nav .owl-next,
@@ -7087,21 +7087,21 @@ img{
 .feedback-section .carousel-outer:hover .owl-nav .owl-next,
 .feedback-section .carousel-outer:hover .owl-nav .owl-prev{
 	opacity:1;
-	visibility:visible;	
+	visibility:visible;
 }
 
 .feedback-section .owl-nav .owl-prev{
-	left:0px;	
+	left:0px;
 }
 
 .feedback-section .owl-nav .owl-next{
-	right:0px;	
+	right:0px;
 }
 
 .feedback-section .owl-nav .owl-next:hover,
 .feedback-section .owl-nav .owl-prev:hover{
 	color:#34c3ed;
-	border-color:#34c3ed;	
+	border-color:#34c3ed;
 }
 
 .feedback-section .owl-item{
@@ -7378,7 +7378,7 @@ img{
 	opacity:1;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Featured Section Three
@@ -7493,7 +7493,7 @@ img{
 
 
 
-/*** 
+/***
 
 ====================================================================
 	Default Section
@@ -7600,7 +7600,7 @@ img{
 	-webkit-appearance:none;
 	-ms-appearance:none;
 	-o-appearance:none;
-	cursor:pointer;	
+	cursor:pointer;
 }
 
 .default-form .form-group button{
@@ -7662,7 +7662,7 @@ img{
 }
 
 .ui-menu .ui-menu-item:last-child{
-	border:none;	
+	border:none;
 }
 
 .ui-menu .ui-menu-item-wrapper{
@@ -7681,7 +7681,7 @@ img{
     background: #34c3ed;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Achivement Section
@@ -7722,7 +7722,7 @@ img{
 	margin-bottom:15px;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Testimonial Section Three
@@ -7941,7 +7941,7 @@ img{
 	font-size:16px;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Page Title Style
@@ -8000,7 +8000,7 @@ img{
 	font-size:16px;
 	color:#272727;
 	line-height:24px;
-	font-weight:700;	
+	font-weight:700;
 }
 
 .page-info .bread-crumb{
@@ -8036,7 +8036,7 @@ img{
 }
 
 .page-info .bread-crumb li:last-child:after{
-	display:none;	
+	display:none;
 }
 
 .page-info .bread-crumb li a{
@@ -8078,7 +8078,7 @@ img{
 	-o-transition:all 0.3s ease;
 }
 
-/*** 
+/***
 
 ====================================================================
 	About Section Two
@@ -8150,7 +8150,7 @@ img{
 	display:block;
 }
 
-/*** 
+/***
 
 ====================================================================
 	featured Section
@@ -8217,7 +8217,7 @@ img{
 	line-height:1.6em;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Approach Section
@@ -8353,7 +8353,7 @@ img{
 	color:#34c3ed;
 }
 
-/*** 
+/***
 
 ====================================================================
 	History Section
@@ -8439,7 +8439,7 @@ img{
 }
 
 .history-section .owl-nav{
-	display:none;	
+	display:none;
 }
 
 .history-section .owl-dots{
@@ -8451,7 +8451,7 @@ img{
 .history-section .owl-dots .owl-dot{
 	position:relative;
 	display:inline-block;
-	margin:0px 8px;	
+	margin:0px 8px;
 }
 
 .history-section .owl-dots .owl-dot span{
@@ -8473,7 +8473,7 @@ img{
 	background:#34c3ed;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Request Section
@@ -8535,7 +8535,7 @@ img{
 	margin-bottom:15px;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Press Section
@@ -8631,7 +8631,7 @@ img{
 .press-section .owl-dots .owl-dot{
 	position:relative;
 	display:inline-block;
-	margin:0px 8px;	
+	margin:0px 8px;
 }
 
 .press-section .owl-dots .owl-dot span{
@@ -8653,7 +8653,7 @@ img{
 	background:#34c3ed;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Blog Grid Section
@@ -8666,7 +8666,7 @@ img{
 	padding:80px 0px 150px;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Styled Pagination
@@ -8686,7 +8686,7 @@ img{
 
 .styled-pagination ul{
 	position:relative;
-	display:inline-block;	
+	display:inline-block;
 }
 
 .styled-pagination li{
@@ -8733,7 +8733,7 @@ img{
 	font-family: 'Nunito Sans', sans-serif;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Sidebar Page Container
@@ -8966,7 +8966,7 @@ img{
 	line-height:1.6em;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Comments Area
@@ -9004,11 +9004,11 @@ img{
 }
 
 .sidebar-page-container .comments-area .comment-box:nth-child(1){
-	padding-top:0px;	
+	padding-top:0px;
 }
 
 .sidebar-page-container .comments-area .comment-box:hover{
-	border-color:#eb5310;	
+	border-color:#eb5310;
 }
 
 .sidebar-page-container .comments-area .comment{
@@ -9050,7 +9050,7 @@ img{
 	position:relative;
 	color:#222222;
 	line-height:24px;
-	font-size:16px;	
+	font-size:16px;
 	font-weight:700;
 	font-family: 'Nunito Sans', sans-serif;
 }
@@ -9065,7 +9065,7 @@ img{
 }
 
 .sidebar-page-container .comments-area .reply-comment{
-	margin-left:40px;	
+	margin-left:40px;
 }
 
 /*Comment Form*/
@@ -9172,7 +9172,7 @@ img{
 .comment-form input:focus,
 .comment-form select:focus,
 .comment-form textarea:focus{
-	border-color:#f06529;	
+	border-color:#f06529;
 }
 
 /*Sidebar Widget*/
@@ -9186,7 +9186,7 @@ img{
 
 .sidebar .search-box .form-group{
 	position:relative;
-	margin:0px;	
+	margin:0px;
 }
 
 .sidebar .search-box .form-group input[type="text"],
@@ -9360,7 +9360,7 @@ img{
 
 .sidebar .popular-posts .post a,
 .sidebar .popular-posts .post a:hover{
-	color:#34c3ed;	
+	color:#34c3ed;
 }
 
 .sidebar .popular-posts .post-info{
@@ -9386,7 +9386,7 @@ img{
 	transition: .5s ease;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Gallery Widget
@@ -9398,7 +9398,7 @@ img{
 	position:relative;
 	float:left;
 	width:33.333%;
-	padding:0px 12px 12px 0px;	
+	padding:0px 12px 12px 0px;
 }
 
 .sidebar .gallery-widget .image img{
@@ -9544,7 +9544,7 @@ img{
 .sidebar .popular-tags a:hover{
 	border-color:#34c3ed;
 	background-color:#34c3ed;
-	color:#ffffff;	
+	color:#ffffff;
 }
 
 /*News Block Six*/
@@ -9634,7 +9634,7 @@ img{
 	margin-top:12px;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Case Section
@@ -9691,7 +9691,7 @@ img{
 	-ms-transform-origin:top;
 	-o-transform-origin:top;
 	-moz-transform-origin:top;
-	transform-origin:top;	
+	transform-origin:top;
 }
 
 .case-block .inner-box:hover .overlay-box{
@@ -9701,7 +9701,7 @@ img{
 	-ms-transform:scaleX(1);
 	-o-transform:scaleX(1);
 	-moz-transform:scaleX(1);
-	transform:scaleX(1);	
+	transform:scaleX(1);
 }
 
 .case-block .inner-box .overlay-box .overlay-inner{
@@ -10008,7 +10008,7 @@ img{
 	display:none;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Contact Section
@@ -10190,7 +10190,7 @@ img{
 	transition:all 500ms ease;
 	-webkit-transition:all 500ms ease;
 	-ms-transition:all 500ms ease;
-	-o-transition:all 500ms ease;	
+	-o-transition:all 500ms ease;
 }
 
 .contact-form input:focus,
@@ -10202,7 +10202,7 @@ img{
 .contact-form textarea{
 	height:230px;
 	resize:none;
-	padding:12px 25px;	
+	padding:12px 25px;
 }
 
 .contact-form button{
@@ -10214,7 +10214,7 @@ img{
 .contact-form input.error,
 .contact-form select.error,
 .contact-form textarea.error{
-	border-color:#ff0000 !important;	
+	border-color:#ff0000 !important;
 }
 
 .contact-form label.error{
@@ -10225,10 +10225,10 @@ img{
 	text-transform:uppercase;
 	font-size:11px;
 	color:#ff0000;
-	font-weight:500;	
+	font-weight:500;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Map Section Style
@@ -10252,7 +10252,7 @@ img{
 }
 
 .map-section .google-map{
-	height:450px;	
+	height:450px;
 }
 
 /*Contact Tabs*/
@@ -10317,11 +10317,11 @@ img{
 }
 
 .contact-tabs .tabs-content{
-	position:relative;	
+	position:relative;
 }
 
 .contact-tabs .tabs-content .tab .text{
-	position:relative;	
+	position:relative;
 	color:#848484;
 	font-size:18px;
 	line-height:1.8em;
@@ -10368,7 +10368,7 @@ img{
 	margin-bottom:30px;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Faq Section
@@ -10467,7 +10467,7 @@ img{
 	transition:all 500ms ease;
 	-webkit-transition:all 500ms ease;
 	-ms-transition:all 500ms ease;
-	-o-transition:all 500ms ease;	
+	-o-transition:all 500ms ease;
 }
 
 .consult-form .ui-selectmenu-button.ui-button{
@@ -10484,14 +10484,14 @@ img{
 .consult-form textarea{
 	height:160px;
 	resize:none;
-	padding:12px 25px;	
+	padding:12px 25px;
 }
 
 .consult-form button{
 	margin-top:15px;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Team Page Section
@@ -10838,7 +10838,7 @@ img{
 
 
 
-/*** 
+/***
 
 ====================================================================
   subscribe Section
@@ -10886,13 +10886,14 @@ img{
 
 
 
-/************************** 
-* Inner Banner styles 
+/**************************
+* Inner Banner styles
 ***************************/
 .inner-banner {
   position: relative;
   background: #f7f7f7;
   background-size: cover;
+  background-position: bottom;
 }
 .inner-banner:before {
   content: '';

@@ -1,6 +1,8 @@
 <div class="thumbnail myCard @if(isset($mainClass)) {{ $mainClass }} @endif">
-    <img id={{ $id }} @if(isset($image)) src={{ $image }} @else src="/imagesTest/Image0.jpg" @endif class="imgCard" alt="" />
 
+<a href="/directory/detail/{{$id}}"  data-navigo>
+    <img id={{ $id }} @if(isset($image)) src={{ $image }} @else src="/imagesTest/Image0.jpg" @endif class="imgCard" alt="" />
+<a></a>
 
     <div class="caption">
 
@@ -14,14 +16,29 @@
                 <div class="cardCart cartIconButton"><i class="fa fa-shopping-cart fa-lg" aria-hidden="true"></i></div>
             </a>
 
-            <div class="cardShare  cartIconButton" data-idCard={{ $id }}>
+            <a href="http://enlaces-business.softok2.mx/login" title="Calendario">
+                <div class="cardCalendar  cartIconButton"><i class="fa fa-calendar-o fa-lg" aria-hidden="true"></i></div>
+            </a>
+            <div>
 
-                <i class="fa fa-share-alt" aria-hidden="true"></i></div>
+                <div class="c-share">
+                    <input class="c-share__input" type="checkbox" id="checkboxTitle{{ $id }}">
+                    <label class="c-share__toggler" for="checkboxTitle{{ $id }}">
+                        <span class="c-share__icon"></span>
+                    </label>
 
-            <div class="cardCalendar  cartIconButton"><i class="fa fa-calendar-o fa-lg" aria-hidden="true"></i></div>
+                    <ul class="c-share_options">
+                        <div class="shareon" data-title="InnovaHub">
+                            <a class="facebook"></a>
+                            <a class="email" href="mailto:?subject='InnovaHub'&amp;body={{ Request::url().'/details/'.$id}}"></a>
+                            <a class="telegram" data-text={{ Request::url()  }}></a>
+                            <a class="whatsapp" data-text={{ Request::url()  }}></a>
+                        </div>
+                    </ul>
+                </div>
+
+            </div>
 
         </div>
     </div>
 </div>
-
-@include("material.shareModal", [ "id"=>$id])
