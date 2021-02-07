@@ -18,7 +18,7 @@
                         <div class="mx-5">
                             <div>
 
-                                <div class="c-share scale15">
+                                <div class="c-share">
                                     <input class="c-share__input" type="checkbox" id="checkboxTitle">
                                     <label class="c-share__toggler" for="checkboxTitle">
                                         <span class="c-share__icon"></span>
@@ -64,7 +64,7 @@
                     </div>
                     <div class="col-md-4 col-sm-12 max-h-40v">
                         <div class="h-50">
-                            <img src={{ asset('imagesTest/logoEmpresaGenerico.jpg') }} alt="" class="h-full contain">
+                            <img src={{ asset('imagesTest/logoEmpresaGenerico.jpg') }} alt="" class="h-full w-full contain">
                         </div>
                         <div class="h-50">
                             <div class="glider-contain h-full">
@@ -81,7 +81,7 @@
                     </div>
                 </div>
 
-                <div class="row clearfix mt-5">
+                <div class="row clearfix mt-5 sameHeightContainer">
                     <div class="info-column col-lg-5 col-md-5 col-sm-12 col-xs-12">
                         <div class="inner-box">
                             <div>
@@ -124,11 +124,13 @@
                         </div>
 
                     </div>
-                    <!--Content Column-->
+
                     <div class="content-column col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                        <div class="inner-column" style="left: 23px;">
-                            <h2 class="color-blue">Contáctenos</h2>
-                            <div class="text">Por favor contáctenos hoy? Nuestros expertos siempre están listos para ayudarles</div>
+                        <div class="inner-column flex flex-col justify-between h-full pb-5" >
+                            <div class="text-center">
+                                <h2 class="color-blue">Contáctenos</h2>
+                                <div class="text">Por favor contáctenos hoy? Nuestros expertos siempre están listos para ayudarles</div>
+                            </div>
                             <div class="flex justify-around w-full">
 
                                 <div class="mx-5">
@@ -167,8 +169,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4  col-md-4 col-sm-12 col-xs-12 h-30v">
-                        <div class="auxWrapper">
+
+                    <div class="col-lg-4  col-md-4 col-sm-12 col-xs-12 h-40v flex">
+                        <div class="auxWrapper ">
 
                             <div class="docWrapper">
                                 <div class="docTitle">

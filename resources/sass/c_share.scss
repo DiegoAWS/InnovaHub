@@ -6,11 +6,12 @@ $tundora: #464646;
 
 .c-share {
     position: relative;
+    top: 5px;
     width: 19px;
     height: 19px;
 }
 .c-share__toggler:hover {
-    transform: scale(1.2) translate(-2px, 2px);
+    transform: scale(1.1);
 }
 
 .c-share__input {

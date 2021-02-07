@@ -45,13 +45,40 @@ const detailsView = document.getElementById("detailsView");
 const detailTitles = document.getElementsByClassName("TitleDetails");
 const detailDescription = document.getElementById("detailDescription");
 
-const elGlider=document.querySelector('.glider')
-const myGlider=new Glider(elGlider, {
+
+const myGlider=new Glider(document.querySelector('.glider'), {
     slidesToShow: 1,
     dots: '.dots',
-
     rewind:true
   });
+
+  function sliderAuto(slider, miliseconds) {
+    const slidesCount = slider.track.childElementCount;
+    let slideTimeout = null;
+    let nextIndex = 1;
+
+    function slide () {
+      slideTimeout = setTimeout(
+        function () {
+          if (nextIndex >= slidesCount ) {
+            nextIndex = 0;
+          }
+          slider.scrollItem(nextIndex++);
+        },
+        miliseconds
+      );
+    }
+
+    slider.ele.addEventListener('glider-animated', function() {
+      window.clearInterval(slideTimeout);
+      slide();
+    });
+
+    slide();
+   }
+
+   sliderAuto(myGlider, 4000)
+
 
 
 const router = new Navigo("/");

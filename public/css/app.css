@@ -2485,6 +2485,10 @@ section.about-section {
   padding-right: 0px !important;
 }
 
+.color-less-black {
+  background-color: #32343cf2 !important;
+}
+
 .shadows {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
@@ -2513,8 +2517,16 @@ section.about-section {
   height: 50%;
 }
 
+.h-40v {
+  height: 40vh !important;
+}
+
 .flex {
   display: flex !important;
+}
+
+.flex-col {
+  flex-direction: column !important;
 }
 
 .justify-start {
@@ -2567,12 +2579,28 @@ section.about-section {
   -o-object-fit: contain !important;
      object-fit: contain !important;
   background-size: contain !important;
+  -o-object-position: center;
+     object-position: center;
+  background-position: center;
 }
 
 .cover {
   -o-object-fit: cover !important;
      object-fit: cover !important;
   background-size: cover !important;
+  -o-object-position: center;
+     object-position: center;
+  background-position: center;
+}
+
+.sameHeightContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sameHeightContainer > div {
+  display: flex;
+  flex-direction: column;
 }
 
 .myCard {
@@ -2632,7 +2660,7 @@ section.about-section {
 }
 
 .cartIconButton:hover {
-  transform: scale(1.2) translate(-2px, 2px);
+  transform: scale(1.1);
 }
 
 .multi-select__select {
@@ -2939,8 +2967,7 @@ section.about-section {
 
 @media only screen and (max-width: 768px) {
   .mediaContainer {
-    padding: 0 !important;
-    padding-top: 10px !important;
+    padding: 10px 0 !important;
     width: 100% !important;
   }
 }
@@ -2956,7 +2983,6 @@ section.about-section {
   border: 1px solid black;
   position: relative;
   width: 100%;
-  height: 40vh;
   padding: 20px;
 }
 
@@ -2973,12 +2999,16 @@ section.about-section {
 .mediaContainer .galleryWrapper {
   height: 100%;
   width: 100%;
-  overflow-x: auto;
-  overflow-y: hidden;
+  max-height: min(500px, 60vh);
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 .mediaContainer .galleryWrapper .gallery {
   display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 100% !important;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
@@ -3030,12 +3060,13 @@ section.about-section {
 
 .c-share {
   position: relative;
+  top: 5px;
   width: 19px;
   height: 19px;
 }
 
 .c-share__toggler:hover {
-  transform: scale(1.2) translate(-2px, 2px);
+  transform: scale(1.1);
 }
 
 .c-share__input {
@@ -3393,7 +3424,7 @@ section.about-section {
 
 .docWrapper .docTitle {
   position: absolute;
-  top: -25px;
+  top: -7%;
   left: 10px;
   background-color: white;
   color: #34c3ee;

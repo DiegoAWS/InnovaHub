@@ -1,7 +1,6 @@
 @media only screen and (max-width: 768px) {
     .mediaContainer {
-        padding: 0 !important;
-        padding-top: 10px !important;
+        padding: 10px 0 !important;
         width: 100% !important;
     }
 }
@@ -17,7 +16,7 @@
     position: relative;
     width: 100%;
 
-    height: 40vh;
+
 
     padding: 20px;
     .mediaTitle {
@@ -32,10 +31,14 @@
     .galleryWrapper {
         height: 100%;
         width: 100%;
-        overflow-x: auto;
-        overflow-y: hidden;
+        max-height: min(500px,60vh);
+        overflow-x: hidden;
+        overflow-y: auto;
         .gallery {
             display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            width: 100% !important;
             width: max-content;
 
             height: 100%;

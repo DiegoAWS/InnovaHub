@@ -1,5 +1,23 @@
 <div class="mediaContainer">
     <div class="mediaTitle"> Media</div>
+    <div class="filterContainer flex">
+
+        <div class="px-2">
+            <input type="radio" id="huey" name="drone" value="huey" checked>
+            <label for="huey">Todo</label>
+        </div>
+
+        <div class="px-2">
+            <input type="radio" id="dewey" name="drone" value="dewey">
+            <label for="dewey">Videos</label>
+        </div>
+
+        <div class="px-2">
+            <input type="radio" id="louie" name="drone" value="louie">
+            <label for="louie">Fotos</label>
+        </div>
+
+    </div>
     <div class="galleryWrapper">
         <div class="gallery">
 

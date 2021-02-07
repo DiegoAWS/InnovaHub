@@ -1,4 +1,4 @@
-<div class="sticky-header">
+<div class="sticky-header color-less-black">
     <div class="auto-container clearfix">
         <!--Logo-->
         <div class="logo pull-left">
