@@ -1,6 +1,6 @@
 <div id="directoryContainer">
     <!-- Header Section -->
-    <div class="inner-banner text-center" style="background-image: url({{ asset('imagesTest/directoryHeader.jpg') }});">
+    <div class="inner-banner text-center" style="background-image: url({{ asset('imagesTest/directoryHeader.jpg') }})">
         <div class="auto-container">
             <div class="box">
                 <h3>Directorio</h3>
@@ -9,7 +9,7 @@
                 <div class="clearfix">
                     <div class="pull-left">
                         <ul class="list-inline link-list">
-                            <li><a href="{{ route('home') }}" >Inicio</a></li>
+                            <li><a href="{{ route('home') }}">Inicio</a></li>
                             <li>Directorio</li>
                         </ul>
                     </div>
@@ -111,7 +111,9 @@
 
 
 </div>
-</div>
-<div id="detailsView" >
+
+<div id="detailsView">
     @include('directory.detailsItem')
 </div>
+
+@include('material.appointment')

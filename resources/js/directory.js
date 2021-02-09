@@ -45,47 +45,48 @@ const detailsView = document.getElementById("detailsView");
 const detailTitles = document.getElementsByClassName("TitleDetails");
 const detailDescription = document.getElementById("detailDescription");
 
-
-const myGlider=new Glider(document.querySelector('.glider'), {
+//#region Glider
+const myGlider = new Glider(document.querySelector('.glider'), {
     slidesToShow: 1,
     dots: '.dots',
-    rewind:true
-  });
+    rewind: true
+});
 
-  function sliderAuto(slider, miliseconds) {
+function sliderAuto(slider, miliseconds) {
     const slidesCount = slider.track.childElementCount;
     let slideTimeout = null;
     let nextIndex = 1;
 
-    function slide () {
-      slideTimeout = setTimeout(
-        function () {
-          if (nextIndex >= slidesCount ) {
-            nextIndex = 0;
-          }
-          slider.scrollItem(nextIndex++);
-        },
-        miliseconds
-      );
+    function slide() {
+        slideTimeout = setTimeout(
+            function () {
+                if (nextIndex >= slidesCount) {
+                    nextIndex = 0;
+                }
+                slider.scrollItem(nextIndex++);
+            },
+            miliseconds
+        );
     }
 
-    slider.ele.addEventListener('glider-animated', function() {
-      window.clearInterval(slideTimeout);
-      slide();
+    slider.ele.addEventListener('glider-animated', function () {
+        window.clearInterval(slideTimeout);
+        slide();
     });
 
     slide();
-   }
+}
 
-   sliderAuto(myGlider, 4000)
+sliderAuto(myGlider, 4000)
 
+//#endregion
 
-
+//#region Router
 const router = new Navigo("/");
 
-router.on("/", function() {});
+router.on("/", function () { });
 
-router.on("/directory", function() {
+router.on("/directory", function () {
     directoryContainer.style.display = "block";
     detailsView.style.display = "none";
 
@@ -109,3 +110,49 @@ router.on("/directory/detail/:id", ({ data }) => {
     window.scrollTo(0, 0);
 });
 router.resolve();
+//#endregion
+
+
+//#region Appointment Modal
+
+const cardsModalButtons=document.getElementsByClassName("appointmentModalCardTrigger")
+const appointmentModal=document.getElementById("appointmentModal")
+const enterpriseModal=document.getElementById("enterpriseModal")
+
+const backdropModal =document.querySelector(".backdrop-modal")
+const contentModal =document.querySelector(".content-modal")
+const modalSubmitAppointment=document.getElementById("modalSubmitAppointment")
+
+for(let i =0 ; i<cardsModalButtons.length; i++){
+    let itemButton=cardsModalButtons[i]
+
+    itemButton.addEventListener('click',(e)=>{
+
+        const idModal=e.target.getAttribute('data-id')
+
+        appointmentModal.removeAttribute('hidden')
+        enterpriseModal.value=dataFromServer[idModal % 5].title
+
+
+    })
+
+}
+
+backdropModal.addEventListener("click",()=>{
+    appointmentModal.setAttribute("hidden",true)
+    enterpriseModal.value=""
+
+})
+modalSubmitAppointment.addEventListener("click",()=>{
+    appointmentModal.setAttribute("hidden",true)
+    enterpriseModal.value=""
+
+})
+
+
+contentModal.addEventListener("click",(e)=>{
+   e.stopPropagation()
+
+})
+
+//#endregion
