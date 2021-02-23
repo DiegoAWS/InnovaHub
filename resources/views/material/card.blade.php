@@ -17,7 +17,7 @@
                 </a>
 
                 <div class="appointmentModalCardTrigger" data-id={{ $id }}  title="Calendario">
-                    <div data-id={{ $id }} class="cardCalendar  cartIconButton"><i data-id={{ $id }}  class="fa fa-calendar-o fa-lg" aria-hidden="true"></i></div>
+                    <div class="cardCalendar  cartIconButton"><i  class="fa fa-calendar-o fa-lg" aria-hidden="true"></i></div>
                 </div>
                 <div>
 

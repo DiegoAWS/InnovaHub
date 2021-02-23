@@ -93,6 +93,8 @@ router.on("/directory", function () {
     window.scrollTo(0, 0);
 });
 router.on("/directory/detail/:id", ({ data }) => {
+    const detailsAppointmentTrigger = document.querySelector("#detailsView .appointmentModalCardTrigger")
+
     let id = data && data.id ? data.id : 0;
 
     let info = dataFromServer[id % 5];
@@ -101,6 +103,12 @@ router.on("/directory/detail/:id", ({ data }) => {
         titleItem.innerText = info.title;
     }
     detailDescription.innerText = info.description;
+
+    if (detailsAppointmentTrigger) {
+        detailsAppointmentTrigger.removeAttribute("data-id")
+
+        detailsAppointmentTrigger.setAttribute("data-id",id.toString())
+    }
 
     // detailsImage.src = info.image;
 
@@ -115,43 +123,43 @@ router.resolve();
 
 //#region Appointment Modal
 
-const cardsModalButtons=document.getElementsByClassName("appointmentModalCardTrigger")
-const appointmentModal=document.getElementById("appointmentModal")
-const enterpriseModal=document.getElementById("enterpriseModal")
+const cardsModalButtons = document.getElementsByClassName("appointmentModalCardTrigger")
+const appointmentModal = document.getElementById("appointmentModal")
+const enterpriseModal = document.getElementById("enterpriseModal")
 
-const backdropModal =document.querySelector(".backdrop-modal")
-const contentModal =document.querySelector(".content-modal")
-const modalSubmitAppointment=document.getElementById("modalSubmitAppointment")
+const backdropModal = document.querySelector(".backdrop-modal")
+const contentModal = document.querySelector(".content-modal")
+const modalSubmitAppointment = document.getElementById("modalSubmitAppointment")
 
-for(let i =0 ; i<cardsModalButtons.length; i++){
-    let itemButton=cardsModalButtons[i]
+//Cards Appointment Modal
+for (let i = 0; i < cardsModalButtons.length; i++) {
+    let itemButton = cardsModalButtons[i]
 
-    itemButton.addEventListener('click',(e)=>{
+    itemButton.addEventListener('click', (e) => {
 
-        const idModal=e.target.getAttribute('data-id')
-
+        const idModal = e.currentTarget.getAttribute('data-id')
         appointmentModal.removeAttribute('hidden')
-        enterpriseModal.value=dataFromServer[idModal % 5].title
-
+        enterpriseModal.value = dataFromServer[idModal % 5].title
 
     })
-
 }
 
-backdropModal.addEventListener("click",()=>{
-    appointmentModal.setAttribute("hidden",true)
-    enterpriseModal.value=""
+
+
+backdropModal.addEventListener("click", () => {
+    appointmentModal.setAttribute("hidden", true)
+    enterpriseModal.value = ""
 
 })
-modalSubmitAppointment.addEventListener("click",()=>{
-    appointmentModal.setAttribute("hidden",true)
-    enterpriseModal.value=""
+modalSubmitAppointment.addEventListener("click", () => {
+    appointmentModal.setAttribute("hidden", true)
+    enterpriseModal.value = ""
 
 })
 
 
-contentModal.addEventListener("click",(e)=>{
-   e.stopPropagation()
+contentModal.addEventListener("click", (e) => {
+    e.stopPropagation()
 
 })
 

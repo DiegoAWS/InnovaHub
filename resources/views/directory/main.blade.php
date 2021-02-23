@@ -1,6 +1,6 @@
 <div id="directoryContainer">
     <!-- Header Section -->
-    <div class="inner-banner text-center" style="background-image: url({{ asset('imagesTest/directoryHeader.jpg') }})">
+    <div class="inner-banner text-center"  id="directoryHeader" >
         <div class="auto-container">
             <div class="box">
                 <h3>Directorio</h3>
@@ -109,6 +109,8 @@
         </div>
     </div>
 
+
+</div>
 
 </div>
 

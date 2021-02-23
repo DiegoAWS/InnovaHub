@@ -1,6 +1,6 @@
-<div id="detailsView">
+<div>
     <!-- Header Section -->
-    <div class="inner-banner text-center" style="background-image: url({{ asset('imagesTest/detailsHeader.jpg') }});">
+    <div class="inner-banner text-center" id="detailsHeader">
         <div class="auto-container">
             <div class="box">
                 <h3>Directorio</h3>
@@ -126,7 +126,7 @@
                     </div>
 
                     <div class="content-column col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                        <div class="inner-column flex flex-col justify-between h-full pb-5" >
+                        <div class="inner-column flex flex-col justify-between h-full pb-5">
                             <div class="text-center">
                                 <h2 class="color-blue">Contáctenos</h2>
                                 <div class="text">Por favor contáctenos hoy? Nuestros expertos siempre están listos para ayudarles</div>
@@ -134,13 +134,13 @@
                             <div class="flex justify-around w-full">
 
                                 <div class="mx-5">
-                                    <a href="http://enlaces-business.softok2.mx/login" title="Productos">
+                                    <div class="appointmentModalCardTrigger" data-id=''  title="Productos">
                                         <div class="squareIcon cartIconButton">
                                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="white">
                                                 <path d="M12 192h424c6.6 0 12 5.4 12 12v260c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V204c0-6.6 5.4-12 12-12zm436-44v-36c0-26.5-21.5-48-48-48h-48V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H160V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H48C21.5 64 0 85.5 0 112v36c0 6.6 5.4 12 12 12h424c6.6 0 12-5.4 12-12z" />
                                             </svg>
                                         </div>
-                                    </a>
+                                    </div>
                                 </div>
 
                                 <div class="mx-5">

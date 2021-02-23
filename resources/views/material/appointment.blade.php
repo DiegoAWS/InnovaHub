@@ -3,7 +3,7 @@
 
         <div class="container-fluid">
             <div class="row">
-                <div class="col-xs-12 col-sm-6 py-4">
+                <div class="col-xs-12 col-sm-8 py-4">
                     @include("material.textField",
                     [
                     "id"=>"enterpriseModal",
@@ -13,7 +13,7 @@
                     ]
                     )
                 </div>
-                <div class="col-xs-12 col-sm-6 py-4">
+                <div class="col-xs-12 col-sm-4 py-4">
                     @include("material.textField",
                     [
                     "id"=>"date",
@@ -23,7 +23,7 @@
                     ]
                     )
                 </div>
-                <div class="col-xs-12 col-sm-6 py-4">
+                <div class="col-xs-12 col-sm-8 py-4">
                     @include("material.textField",
                     [
                     "id"=>"subject",
@@ -34,7 +34,7 @@
                     )
                 </div>
 
-                <div class="col-xs-12 col-sm-6 py-4">
+                <div class="col-xs-12 col-sm-4 py-4">
                     @include("material.textField",
                     [
                     "id"=>"dateHour",
@@ -76,7 +76,7 @@
                     )
                 </div>
                 <div class="col-xs-12 py-4">
-                    @include("material.textField",
+                    @include("material.textAreaField",
                     [
                     "id"=>"notes",
                     "label"=>__('Notas'),
